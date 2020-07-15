@@ -1,0 +1,67 @@
+-
+	const translation = locals.translation, 
+		playbooks = Object.keys(locals.data.playbooks);
+
+
+mixin checkbox(name, extraclass)
+	input(type='checkbox', class=[attributes.class, extraclass || ''], name=`attr_${name}`, value=attributes.value||'1', checked=attributes.checked)
+	span(class=extraclass, data-i18n!=attributes['data-i18n'])
+		block
+
+mixin radio(name)
+	input(type='radio', class!=attributes.class, name=`attr_${name}`, value!=attributes.value, checked=attributes.checked)
+	span(data-i18n!=attributes['data-i18n'])
+		block
+
+mixin text-input(name, i18nvalue)
+	input(type='text', spellcheck='false', name=`attr_${name}`, value=i18nvalue ? translation[i18nvalue] : false)&attributes(attributes)
+
+mixin number-input(name)
+	input(type='number', name=`attr_${name}`)&attributes(attributes)
+
+mixin textarea(name, i18nvalue)
+	textarea(spellcheck='false', name=`attr_${name}`)&attributes(attributes)
+		= i18nvalue ? translation[i18nvalue] : ''
+
+mixin hidden-input(name)
+	input(type='hidden', name=`attr_${name}`)&attributes(attributes)
+
+mixin hidden-checkbox(name)
+	- classes = attributes.class;
+	- delete attributes.class;
+	input(type='checkbox', name=`attr_${name}`, class=['hidden', classes])&attributes(attributes)
+
+mixin autoexpand(name, i18nvalue)
+	div(class=['auto-expand', attributes.class])
+		span(name=`attr_${name}`)= i18nvalue ? translation[i18nvalue] : ''
+		+textarea(name, i18nvalue)(data-i18n-placeholder!=attributes['data-i18n-placeholder'])
+
+//- Creates a roll button using stat as a bonus
+mixin roll(name, templatedata, stat)
+	button(
+		type='roll',
+		name=`roll_${name}`,
+		value!=`&{template:mp} {{charname=@{character_name}}} ${templatedata} `
+	)&attributes(attributes)
+
+
+mixin playbook-selector()
+	.playbook-selector
+		select(name='attr_playbook')
+			optgroup
+				option() #{translation["selectplaybook"]}
+				each playbook in playbooks
+					option(value=playbook) #{translation[playbook]}
+
+
+
+.sheet-wrapper
+	include pug/character.pug
+
+|
+include pug/rolltemplate.pug
+|
+|
+|
+script(type='text/worker')
+	!= locals.workers

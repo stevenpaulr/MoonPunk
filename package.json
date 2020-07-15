@@ -1,23 +1,23 @@
 {
-    "name": "MoonPunk",
-    "version": "1.0.0",
-    "description": "Character Sheet for Moonpunk",
-    "dependencies": {
-      "pug": "^2.0.4",
-      "node-sass": "^4.11.0",
-      "jstransformer": "^1.0.0"
-    },
-    "repository": {
-      "type": "git",
-      "url": "git+https://github.com/stevenpaulr/MoonPunk.git"
-    },
-    "keywords": [
-      "Roll20"
-    ],
-    "author": "Steve Radabaugh",
-    "license": "ISC",
-    "bugs": {
-      "url": "https://github.com/stevenpaulr/MoonPunk/issues"
-    },
-    "homepage": "https://github.com/stevenpaulr/MoonPunk#readme"
-  }
+  "name": "MoonPunk",
+  "version": "1.0.0",
+  "description": "Character Sheet for Moonpunk",
+  "dependencies": {
+    "pug": "^2.0.4",
+    "node-sass": "^4.11.0",
+    "jstransformer": "^1.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stevenpaulr/MoonPunk.git"
+  },
+  "keywords": [
+    "Roll20"
+  ],
+  "author": "Steve Radabaugh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stevenpaulr/MoonPunk/issues"
+  },
+  "homepage": "https://github.com/stevenpaulr/MoonPunk#readme"
+}

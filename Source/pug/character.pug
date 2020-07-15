@@ -1,0 +1,36 @@
+.flex
+    //Top info
+    .col100.flex-wrap
+        label.col47
+            +text-input('character_name')
+            .label.text.title(data-i18n='name')
+        label.col24b
+            +text-input('pronouns')
+            .label.text.title(data-i18n='pronouns')
+        +playbook-selector()
+        label.col100
+            +text-input('ethos')
+            .label.text.title(data-i18n='ethos')
+        
+        //Left Column
+        .col15
+            label.col100.stats
+                +number-input('presence')
+                .label.text.title(data-i18n='presence')
+                .moves(data-i18n='tanstaafl')
+                .moves(data-i18n='influencesomeone')
+            label.col100.stats
+                +number-input('cool')
+                .label.text.title(data-i18n='cool')
+                .moves(data-i18n='thinkfast')
+                .moves(data-i18n='actcasual')
+            label.col100.stats
+                +number-input('smarts')
+                .label.text.title(data-i18n='smarts')
+                .moves(data-i18n='usetech')
+                .moves(data-i18n='readroom')
+            label.col100.stats
+                +number-input('bones')
+                .label.text.title(data-i18n='bones')
+                .moves(data-i18n='throwdown')
+                .moves(data-i18n='protectsomeone')

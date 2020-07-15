@@ -1,0 +1,341 @@
+{
+	"playbooks": {
+		"duster": {
+			"stats" : {
+				"1" : {
+					"presence" : -1,
+					"cool" : 2,
+					"smarts": 1,
+					"bones": 1
+				},
+				"2" : {
+					"presence" : -1,
+					"cool" : 2,
+					"smarts": 2,
+					"bones": -1
+				},
+				"3" : {
+					"presence" : -0,
+					"cool" : 2,
+					"smarts": 1,
+					"bones": 0
+				},
+				"4" : {
+					"presence" : 1,
+					"cool" : 2,
+					"smarts": 1,
+					"bones": -1
+				}
+			}
+		},
+		"enforcer": {
+			"stats" : {
+				"1" : {
+					"presence" : -1,
+					"cool" : 2,
+					"smarts": 1,
+					"bones": 1
+				},
+				"2" : {
+					"presence" : -1,
+					"cool" : 2,
+					"smarts": 2,
+					"bones": -1
+				},
+				"3" : {
+					"presence" : -0,
+					"cool" : 2,
+					"smarts": 1,
+					"bones": 0
+				},
+				"4" : {
+					"presence" : 1,
+					"cool" : 2,
+					"smarts": 1,
+					"bones": -1
+				}
+			}
+		},
+		"guildy": {
+			"stats" : {
+				"1" : {
+					"presence" : -1,
+					"cool" : 2,
+					"smarts": 1,
+					"bones": 1
+				},
+				"2" : {
+					"presence" : -1,
+					"cool" : 2,
+					"smarts": 2,
+					"bones": -1
+				},
+				"3" : {
+					"presence" : -0,
+					"cool" : 2,
+					"smarts": 1,
+					"bones": 0
+				},
+				"4" : {
+					"presence" : 1,
+					"cool" : 2,
+					"smarts": 1,
+					"bones": -1
+				}
+			}
+		},
+		"labcoat": {
+			"stats" : {
+				"1" : {
+					"presence" : -1,
+					"cool" : 2,
+					"smarts": 1,
+					"bones": 1
+				},
+				"2" : {
+					"presence" : -1,
+					"cool" : 2,
+					"smarts": 2,
+					"bones": -1
+				},
+				"3" : {
+					"presence" : -0,
+					"cool" : 2,
+					"smarts": 1,
+					"bones": 0
+				},
+				"4" : {
+					"presence" : 1,
+					"cool" : 2,
+					"smarts": 1,
+					"bones": -1
+				}
+			}
+		},
+		"mutant": {
+			"stats" : {
+				"1" : {
+					"presence" : -1,
+					"cool" : 2,
+					"smarts": 1,
+					"bones": 1
+				},
+				"2" : {
+					"presence" : -1,
+					"cool" : 2,
+					"smarts": 2,
+					"bones": -1
+				},
+				"3" : {
+					"presence" : -0,
+					"cool" : 2,
+					"smarts": 1,
+					"bones": 0
+				},
+				"4" : {
+					"presence" : 1,
+					"cool" : 2,
+					"smarts": 1,
+					"bones": -1
+				}
+			}
+		},
+		"newmooner": {
+			"stats" : {
+				"1" : {
+					"presence" : -1,
+					"cool" : 2,
+					"smarts": 1,
+					"bones": 1
+				},
+				"2" : {
+					"presence" : -1,
+					"cool" : 2,
+					"smarts": 2,
+					"bones": -1
+				},
+				"3" : {
+					"presence" : -0,
+					"cool" : 2,
+					"smarts": 1,
+					"bones": 0
+				},
+				"4" : {
+					"presence" : 1,
+					"cool" : 2,
+					"smarts": 1,
+					"bones": -1
+				}
+			}
+		},
+		"oldtimer": {
+			"stats" : {
+				"1" : {
+					"presence" : -1,
+					"cool" : 2,
+					"smarts": 1,
+					"bones": 1
+				},
+				"2" : {
+					"presence" : -1,
+					"cool" : 2,
+					"smarts": 2,
+					"bones": -1
+				},
+				"3" : {
+					"presence" : -0,
+					"cool" : 2,
+					"smarts": 1,
+					"bones": 0
+				},
+				"4" : {
+					"presence" : 1,
+					"cool" : 2,
+					"smarts": 1,
+					"bones": -1
+				}
+			}
+		},
+		"pilot": {
+			"stats" : {
+				"1" : {
+					"presence" : -1,
+					"cool" : 2,
+					"smarts": 1,
+					"bones": 1
+				},
+				"2" : {
+					"presence" : -1,
+					"cool" : 2,
+					"smarts": 2,
+					"bones": -1
+				},
+				"3" : {
+					"presence" : -0,
+					"cool" : 2,
+					"smarts": 1,
+					"bones": 0
+				},
+				"4" : {
+					"presence" : 1,
+					"cool" : 2,
+					"smarts": 1,
+					"bones": -1
+				}
+			}
+		},
+		"politician": {
+			"stats" : {
+				"1" : {
+					"presence" : -1,
+					"cool" : 2,
+					"smarts": 1,
+					"bones": 1
+				},
+				"2" : {
+					"presence" : -1,
+					"cool" : 2,
+					"smarts": 2,
+					"bones": -1
+				},
+				"3" : {
+					"presence" : -0,
+					"cool" : 2,
+					"smarts": 1,
+					"bones": 0
+				},
+				"4" : {
+					"presence" : 1,
+					"cool" : 2,
+					"smarts": 1,
+					"bones": -1
+				}
+			}
+		},
+		"rocker": {
+			"stats" : {
+				"1" : {
+					"presence" : -1,
+					"cool" : 2,
+					"smarts": 1,
+					"bones": 1
+				},
+				"2" : {
+					"presence" : -1,
+					"cool" : 2,
+					"smarts": 2,
+					"bones": -1
+				},
+				"3" : {
+					"presence" : -0,
+					"cool" : 2,
+					"smarts": 1,
+					"bones": 0
+				},
+				"4" : {
+					"presence" : 1,
+					"cool" : 2,
+					"smarts": 1,
+					"bones": -1
+				}
+			}
+		},
+		"techie": {
+			"stats" : {
+				"1" : {
+					"presence" : -1,
+					"cool" : 2,
+					"smarts": 1,
+					"bones": 1
+				},
+				"2" : {
+					"presence" : -1,
+					"cool" : 2,
+					"smarts": 2,
+					"bones": -1
+				},
+				"3" : {
+					"presence" : -0,
+					"cool" : 2,
+					"smarts": 1,
+					"bones": 0
+				},
+				"4" : {
+					"presence" : 1,
+					"cool" : 2,
+					"smarts": 1,
+					"bones": -1
+				}
+			}
+		},
+		"vendor": {
+			"stats" : {
+				"1" : {
+					"presence" : -1,
+					"cool" : 2,
+					"smarts": 1,
+					"bones": 1
+				},
+				"2" : {
+					"presence" : -1,
+					"cool" : 2,
+					"smarts": 2,
+					"bones": -1
+				},
+				"3" : {
+					"presence" : -0,
+					"cool" : 2,
+					"smarts": 1,
+					"bones": 0
+				},
+				"4" : {
+					"presence" : 1,
+					"cool" : 2,
+					"smarts": 1,
+					"bones": -1
+				}
+			}
+		}
+	}
+
+}
