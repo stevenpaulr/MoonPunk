@@ -186,7 +186,7 @@ $fontblack: #333;
 	.sheet-moves {
 		width:100%;
 		text-align: center;
-		margin:0px;
+		margin:0;
 		font-size:12px;
 	}
 
@@ -195,7 +195,17 @@ $fontblack: #333;
 	input::-webkit-inner-spin-button {
   		-webkit-appearance: none;
 		margin: 0;
-}
+	}
+
+	.sheet-statbutton{
+		border:0;
+		background-color: black;
+		color: white;
+		margin:0 !important;
+		font-size:18px;
+		width:100%;
+		text-align: center;
+	}
 
 }
 
@@ -241,6 +251,9 @@ $fontblack: #333;
 }
 .sheet-col15 {
 	width:15%
+}
+.sheet-col42 {
+	width: 42.5%
 }
 .sheet-col47 {
 	width: 47%

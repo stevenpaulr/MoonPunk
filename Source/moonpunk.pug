@@ -37,11 +37,11 @@ mixin autoexpand(name, i18nvalue)
 		+textarea(name, i18nvalue)(data-i18n-placeholder!=attributes['data-i18n-placeholder'])
 
 //- Creates a roll button using stat as a bonus
-mixin roll(name, templatedata, stat)
+mixin roll(name, stat)
 	button(
 		type='roll',
 		name=`roll_${name}`,
-		value!=`&{template:mp} {{charname=@{character_name}}} ${templatedata} `
+		value!=`&{template:default} {{name=${translation[name]}}} {{charname=@{character_name} rolled plus ${translation[stat]}}} {{Roll=[[2d6+@{${stat}}+?{+/- forward?|0}]]}}`
 	)&attributes(attributes)
 
 

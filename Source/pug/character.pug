@@ -16,21 +16,25 @@
         .col15
             label.col100.stats
                 +number-input('presence')
-                .label.text.title(data-i18n='presence')
+                +roll('presence','presence')(data-i18n='presence').statbutton
                 .moves(data-i18n='tanstaafl')
                 .moves(data-i18n='influencesomeone')
             label.col100.stats
                 +number-input('cool')
-                .label.text.title(data-i18n='cool')
+                +roll('cool','cool')(data-i18n='cool').statbutton
                 .moves(data-i18n='thinkfast')
                 .moves(data-i18n='actcasual')
             label.col100.stats
                 +number-input('smarts')
-                .label.text.title(data-i18n='smarts')
+                +roll('smarts','smarts')(data-i18n='smarts').statbutton
                 .moves(data-i18n='usetech')
                 .moves(data-i18n='readroom')
             label.col100.stats
                 +number-input('bones')
-                .label.text.title(data-i18n='bones')
+                +roll('bones','bones')(data-i18n='bones').statbutton
                 .moves(data-i18n='throwdown')
                 .moves(data-i18n='protectsomeone')
+
+        //Center Column - Tanstaafl & XP
+        .col45
+            .text.section-head(data-i18n='tanstaafl')
