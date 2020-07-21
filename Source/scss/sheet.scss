@@ -102,6 +102,7 @@ $fontblack: #333;
 			cursor: pointer;
 			display: inline-block;
 			transition: all 0.2s, opacity 0s;
+			position: absolute;
 		}
 	}
 
@@ -121,6 +122,13 @@ $fontblack: #333;
 			position: absolute;
 		}
 	}
+
+	button{
+		background-color: white;
+		background-image: none;
+		border-radius: 0;
+	}
+
 
 	button[type=roll].sheet-inherit, input[type=text].sheet-inherit {
 		font: inherit;
@@ -142,6 +150,10 @@ $fontblack: #333;
 }
 .sheet-hidden {
 	display: none !important;
+}
+
+.sheet-wrapper {
+	position:relative;
 }
 
 
@@ -209,13 +221,6 @@ $fontblack: #333;
 
 }
 
-
-
-.sheet-wrapper {
-	position:relative;
-}
-
-
 .sheet-flexwidth {
 	&[value="0"] ~ .sheet-container {
 		width: 860px;
@@ -263,6 +268,10 @@ $fontblack: #333;
 }
 .sheet-col37 {
 	width: 37%;
+}
+
+.sheet-col40 {
+	width: 40%;
 }
 .sheet-col24b {
 	width: 24.25%;
@@ -318,3 +327,164 @@ textarea.sheet-smallcaps {
 	padding:3px 5px;
 	margin-right: 10px;
 } 
+
+.sheet-section-head {
+	text-align: center;
+	font-size: 18px;
+}
+
+.sheet-tanstaafl {
+	padding:5px;
+
+	.sheet-oweLabel {
+		border-right: 2px solid black;
+		border-bottom:2px solid black;
+		text-align: center;
+	}
+
+	.sheet-owedLabel{
+		border-bottom:2px solid black;
+		text-align:center;
+	}
+
+	.sheet-owe{
+		border-right:2px solid black;
+
+
+	}
+
+	.sheet-owed,.sheet-owe{
+
+		input[type=text] {
+			text-align: center;
+			border:none;
+		}
+	}
+
+	button{
+		margin:2px;
+	}
+
+}
+
+
+//XP Box Area
+$xpboxwidth:30px;
+$xpboxpadding:2px;
+.sheet-exp{
+	padding-left: 5px;
+	margin-top:5px;
+
+	.sheet-xpboxcontainer{
+		width:$xpboxwidth + $xpboxpadding;
+	}
+	
+	/* CHECKBOXES */
+	.sheet-xpbox {
+		margin-right: -$xpboxwidth;
+	}
+	input.sheet-xpbox, .sheet-xpbox + span {
+		height: $xpboxwidth;
+		width: $xpboxwidth;
+		flex: 0 0 auto;
+	}
+	.sheet-tanstbox{
+		span {
+			background:#aaa;
+		}
+	}
+	.sheet-xpbox + span {
+		border: 2px solid black;
+	}
+	.sheet-xpbox:checked + span {
+		background: red;
+	}
+	.sheet-xpbox:hover + span {
+		opacity: 0.7;
+	}
+}
+
+.sheet-notes{
+	margin-top: 10px;
+	padding-left: 5px;
+
+	textarea{
+		border: 2px solid black;
+		padding:2px;
+	}
+}
+
+
+//Harm Boxes
+$harmboxwidth:30px;
+
+.sheet-harm {
+	padding:5px;
+
+	input.sheet-harmbox {
+		margin-right: -$harmboxwidth;
+	}
+
+	.sheet-harmboxcontainer{
+		border-bottom : 2px solid black;
+		text-align: left;
+		height: 80px;
+	}
+
+	.sheet-harmboxsubcontainer{
+		height: 40px;
+		padding-left:5px;
+		padding-top: 5px
+	}
+
+	input.sheet-harmbox, .sheet-harmbox + span {
+		height: $harmboxwidth;
+		width: $harmboxwidth;
+		flex: 0 0 auto;
+	}
+
+	.sheet-harmbox + span {
+		border: 2px solid black;
+	}
+	.sheet-harmbox:checked  + span{
+		background: red;
+	}
+	.sheet-harmbox:hover + span{
+		opacity: 0.7;
+	}
+
+	.sheet-harmtags {
+		textarea{
+			border: 2px solid black;
+			padding:2px;
+			height: 62px;
+			border-top: none;
+		}
+		
+	}
+
+	.sheet-harmlabel {
+		padding-top: 30px;
+		height: 80px;
+		text-align: right;
+		font-size: 14px;
+		text-transform: lowercase;
+	}
+
+	.sheet-taglabel{
+		width: 100%;
+		text-align: center;
+		height: 18px;
+		border-left: 2px solid black;
+		border-right: 2px solid black;
+		font-size: 18px;
+	}
+
+	.sheet-smalltaglabel{
+		background-color:$lightest;
+		font-size:12px;
+		text-transform: lowercase;
+
+	}
+}
+

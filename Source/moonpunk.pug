@@ -21,7 +21,7 @@ mixin number-input(name)
 
 mixin textarea(name, i18nvalue)
 	textarea(spellcheck='false', name=`attr_${name}`)&attributes(attributes)
-		= i18nvalue ? translation[i18nvalue] : ''
+		
 
 mixin hidden-input(name)
 	input(type='hidden', name=`attr_${name}`)&attributes(attributes)
@@ -41,7 +41,7 @@ mixin roll(name, stat)
 	button(
 		type='roll',
 		name=`roll_${name}`,
-		value!=`&{template:default} {{name=${translation[name]}}} {{charname=@{character_name} rolled plus ${translation[stat]}}} {{Roll=[[2d6+@{${stat}}+?{+/- forward?|0}]]}}`
+		value!=`&{template:default} {{name=${translation[name]}}} {{charname=@{character_name} rolled plus ${translation[stat]}}} {{Roll=[[2d6+@{${stat}}+?{+/- tag?|0}]]}}`
 	)&attributes(attributes)
 
 

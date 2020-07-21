@@ -37,4 +37,75 @@
 
         //Center Column - Tanstaafl & XP
         .col45
-            .text.section-head(data-i18n='tanstaafl')
+            .tanstaafl.flex-wrap
+                .col100.section-head.text(data-i18n='tanstaafl')
+                .col50.oweLabel(data-i18n='owe')
+                .col50.owedLabel(data-i18n='owed')
+                .col50.owe
+                    fieldset.repeating_owe
+                        +text-input('owe')
+                .col50.owed
+                    fieldset.repeating_owed
+                        +text-input('owed')
+            .col100.exp.flex-wrap
+                .col100.section-head.text(data-i18n='exp')
+                .col100.flex-wrap
+                    .xpboxcontainer.tanstbox
+                        +checkbox('xp1','xpbox')
+                    .xpboxcontainer.tanstbox
+                        +checkbox('xp2','xpbox')
+                    .xpboxcontainer
+                        +checkbox('xp3','xpbox')
+                    .xpboxcontainer
+                        +checkbox('xp4','xpbox')
+                    .xpboxcontainer
+                        +checkbox('xp5','xpbox')
+                    .xpboxcontainer
+                        +checkbox('xp6','xpbox')
+                    .xpboxcontainer
+                        +checkbox('xp7','xpbox')
+            .col100.notes
+                .col100.section-head.text(data-i18n='movesnotes')
+                +textarea('notes','notes')
+
+        //Right Column - Harm & Gear
+        .col40
+            .harm.flex-wrap
+                .col100.section-head.text(data-i18n='harm')
+                .col24b.harmlabel.text(data-i18n='minor')
+                .col24b.harmboxcontainer
+                    .harmboxsubcontainer
+                        +checkbox('minor1','harmbox')
+                    .harmboxsubcontainer
+                        +checkbox('minor2','harmbox')
+                .col50.harmtags
+                    .taglabel(data-i18n='tags')
+                    +textarea('minortags','tags')
+
+                .col24b.harmlabel.text(data-i18n='moderate')
+                .col24b.harmboxcontainer
+                    .harmboxsubcontainer
+                        +checkbox('moderate1','harmbox')
+                    .harmboxsubcontainer
+                        +checkbox('moderate2','harmbox')
+                .col50.harmtags
+                    .taglabel.smalltaglabel(data-i18n='temporary')
+                    +textarea('temporarytags','tags')
+
+                .col24b.harmlabel.text(data-i18n='major')
+                .col24b.harmboxcontainer
+                    .harmboxsubcontainer
+                        +checkbox('major1','harmbox')
+                    .harmboxsubcontainer
+                        +checkbox('major2','harmbox')
+                .col50.harmtags
+                    .taglabel.smalltaglabel(data-i18n='needsattention')
+                    +textarea('needattentiontags','tags')
+
+                .col24b.harmlabel.text(data-i18n='dying')
+                .col24b.harmboxcontainer
+                    .harmboxsubcontainer
+                        +checkbox('dying1','harmbox')
+                .col50.harmtags
+                    .taglabel.smalltaglabel(data-i18n='permanent')
+                    +textarea('permanentags','tags')

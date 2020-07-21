@@ -80,6 +80,7 @@
   cursor: pointer;
   display: inline-block;
   transition: all 0.2s, opacity 0s;
+  position: absolute;
 }
 .charsheet ul {
   list-style: none;
@@ -96,6 +97,11 @@
   top: -.1em;
   position: absolute;
 }
+.charsheet button {
+  background-color: white;
+  background-image: none;
+  border-radius: 0;
+}
 .charsheet button[type=roll].sheet-inherit, .charsheet input[type=text].sheet-inherit {
   font: inherit;
   color: inherit;
@@ -110,6 +116,9 @@
 }
 .sheet-hidden {
   display: none !important;
+}
+.sheet-wrapper {
+  position: relative;
 }
 .sheet-playbook-selector select {
   border: 0;
@@ -161,9 +170,6 @@
   width: 100%;
   text-align: center;
 }
-.sheet-wrapper {
-  position: relative;
-}
 .sheet-flexwidth[value="0"] ~ .sheet-container {
   width: 860px;
 }
@@ -207,6 +213,9 @@
 }
 .sheet-col37 {
   width: 37%;
+}
+.sheet-col40 {
+  width: 40%;
 }
 .sheet-col24b {
   width: 24.25%;
@@ -259,4 +268,122 @@ textarea.sheet-smallcaps {
   background-color: black;
   padding: 3px 5px;
   margin-right: 10px;
+}
+.sheet-section-head {
+  text-align: center;
+  font-size: 18px;
+}
+.sheet-tanstaafl {
+  padding: 5px;
+}
+.sheet-tanstaafl .sheet-oweLabel {
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  text-align: center;
+}
+.sheet-tanstaafl .sheet-owedLabel {
+  border-bottom: 2px solid black;
+  text-align: center;
+}
+.sheet-tanstaafl .sheet-owe {
+  border-right: 2px solid black;
+}
+.sheet-tanstaafl .sheet-owed input[type=text], .sheet-tanstaafl .sheet-owe input[type=text] {
+  text-align: center;
+  border: none;
+}
+.sheet-tanstaafl button {
+  margin: 2px;
+}
+.sheet-exp {
+  padding-left: 5px;
+  margin-top: 5px;
+  /* CHECKBOXES */
+}
+.sheet-exp .sheet-xpboxcontainer {
+  width: 32px;
+}
+.sheet-exp .sheet-xpbox {
+  margin-right: -30px;
+}
+.sheet-exp input.sheet-xpbox, .sheet-exp .sheet-xpbox + span {
+  height: 30px;
+  width: 30px;
+  flex: 0 0 auto;
+}
+.sheet-exp .sheet-tanstbox span {
+  background: #aaa;
+}
+.sheet-exp .sheet-xpbox + span {
+  border: 2px solid black;
+}
+.sheet-exp .sheet-xpbox:checked + span {
+  background: red;
+}
+.sheet-exp .sheet-xpbox:hover + span {
+  opacity: 0.7;
+}
+.sheet-notes {
+  margin-top: 10px;
+  padding-left: 5px;
+}
+.sheet-notes textarea {
+  border: 2px solid black;
+  padding: 2px;
+}
+.sheet-harm {
+  padding: 5px;
+}
+.sheet-harm input.sheet-harmbox {
+  margin-right: -30px;
+}
+.sheet-harm .sheet-harmboxcontainer {
+  border-bottom: 2px solid black;
+  text-align: left;
+  height: 80px;
+}
+.sheet-harm .sheet-harmboxsubcontainer {
+  height: 40px;
+  padding-left: 5px;
+  padding-top: 5px;
+}
+.sheet-harm input.sheet-harmbox, .sheet-harm .sheet-harmbox + span {
+  height: 30px;
+  width: 30px;
+  flex: 0 0 auto;
+}
+.sheet-harm .sheet-harmbox + span {
+  border: 2px solid black;
+}
+.sheet-harm .sheet-harmbox:checked + span {
+  background: red;
+}
+.sheet-harm .sheet-harmbox:hover + span {
+  opacity: 0.7;
+}
+.sheet-harm .sheet-harmtags textarea {
+  border: 2px solid black;
+  padding: 2px;
+  height: 62px;
+  border-top: none;
+}
+.sheet-harm .sheet-harmlabel {
+  padding-top: 30px;
+  height: 80px;
+  text-align: right;
+  font-size: 14px;
+  text-transform: lowercase;
+}
+.sheet-harm .sheet-taglabel {
+  width: 100%;
+  text-align: center;
+  height: 18px;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  font-size: 18px;
+}
+.sheet-harm .sheet-smalltaglabel {
+  background-color: #d8d8d8;
+  font-size: 12px;
+  text-transform: lowercase;
 }
