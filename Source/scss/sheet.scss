@@ -157,6 +157,41 @@ $fontblack: #333;
 }
 
 
+/* REPEATING SECTION CONTROLS */
+/* REPEATING SECTION CONTROLS */
+.repcontrol {
+	display: flex;
+	.repcontrol_edit {
+		margin-left: auto;
+		order: 1;
+	}
+	button {
+		background: transparent;
+		color: $lightblack;
+		border-radius: 0;
+		border-color: $darkgrey;
+		transition: all 0.2s;
+		font-family: pictos;
+		font-size: 0;
+		font-weight: bold;
+		padding: 5px 3px 2px;
+		line-height: 8px;
+		margin-top: 5px;
+		&:hover {
+			color: black;
+			border-color: black;
+			background: $lighter;
+		}
+		&.repcontrol_edit::after { content: "(" }
+		&.repcontrol_add::after { content: "&" }
+		&.repcontrol_edit::after, &.repcontrol_add::after { font-size: 12px }
+	}
+}
+.repcontainer.editmode + .repcontrol button.repcontrol_edit::after { content: ")" }
+.sheet-free-repcontrol .repcontrol{ margin-top: 3px }
+
+
+
 .sheet-playbook-selector {
 	select {
 		border:0;
@@ -221,6 +256,24 @@ $fontblack: #333;
 
 }
 
+
+.sheet-stat-selector {
+	select {
+		border:1px solid black;
+		border-radius: 0;
+		font-size: 12px;
+		letter-spacing: 1px;
+		padding-top: 0;
+		height:19px;
+		width:100%;
+	
+	}
+	optgroup {
+		font-size:12px;
+	}
+}
+
+
 .sheet-flexwidth {
 	&[value="0"] ~ .sheet-container {
 		width: 860px;
@@ -268,6 +321,10 @@ $fontblack: #333;
 }
 .sheet-col37 {
 	width: 37%;
+}
+
+.sheet-col33 {
+	width: 33.3%;
 }
 
 .sheet-col40 {
@@ -331,6 +388,7 @@ textarea.sheet-smallcaps {
 .sheet-section-head {
 	text-align: center;
 	font-size: 18px;
+	padding-top: 10px;
 }
 
 .sheet-tanstaafl {
@@ -349,8 +407,7 @@ textarea.sheet-smallcaps {
 
 	.sheet-owe{
 		border-right:2px solid black;
-
-
+		min-height: 215px;
 	}
 
 	.sheet-owed,.sheet-owe{
@@ -488,3 +545,137 @@ $harmboxwidth:30px;
 	}
 }
 
+$gearchecksize:20px;
+.sheet-gearsection {
+	margin: 0 5px;
+	border: 2px solid black;
+
+	input[type=checkbox]{
+		margin: 5px;
+		margin-right:-$gearchecksize - 5px;
+	}
+
+
+	input.sheet-gearcheck, .sheet-gearcheck + span {
+		height: $gearchecksize;
+		width: $gearchecksize;
+		flex: 0 0 auto;
+	}
+
+	.sheet-gearcheck + span {
+		border: 1px solid black;
+		margin: 5px;
+	}
+
+	.sheet-gearcheck:checked  + span{
+		background: red;
+	}
+
+	.sheet-gearcheck:hover + span{
+		opacity: 0.7;
+	}
+
+
+	input[type=text]{
+		width: 295px;
+		margin: 0;
+		margin-left:30px;
+	}
+}
+
+
+.sheet-bottomsection-head {
+	margin-top: 10px;
+	text-align: center;
+	font-size: 16px;
+	background-color: black;
+	color: white;
+	height: 35px;
+	padding-top: 10px;
+	padding-bottom:10px;
+}
+
+.sheet-bottomsection-desc {
+	margin-top: 10px;
+	margin-right: 10px;
+	padding-left:5px;
+	text-align: left;
+	font-size: 12px;
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+	height: 35px;
+}
+
+$bottomchecksize: 10px;
+.sheet-bottomsection{
+
+	.sheet-col33{
+		padding:5px;
+	}
+
+	input[type=checkbox]{
+		margin: 5px;
+		margin-right:-$bottomchecksize - 5px;
+		margin-left: 0;
+	}
+
+
+	input.sheet-btmcheck, .sheet-btmcheck + span {
+		height: $bottomchecksize;
+		width: $bottomchecksize;
+		flex: 0 0 auto;
+	}
+
+	.sheet-btmcheck + span {
+		border: 1px solid black;
+		margin: 5px;
+	}
+
+	.sheet-btmcheck:checked  + span{
+		background: black;
+	}
+
+	.sheet-btmcheck:hover + span{
+		opacity: 0.7;
+	}
+
+	input[type=text]{
+		width: 255px;
+		margin-left: 20px;
+		margin-right:0;
+		border: none;
+		font-size: 18px;
+		outline:none;
+		
+	}
+
+	textarea{
+		width: 100%;
+		height: 80px;
+		outline: none;
+		border-right: 1px solid $greyborder;
+		border-bottom: 1px solid $greyborder;
+	}
+}
+
+.sheet-levelingup {
+	input[type=text]{
+		font-size: 14px;
+	}
+}
+
+.sheet-linksection {
+	input[type=text]{
+		margin: 0;
+		margin-top: 10px;
+		width: 100%;
+		border-bottom: 1px solid black;
+		border-right: 1px solid $greyborder;
+	}
+	input[type=text]:focus{
+		outline: 1px solid blue;
+	}
+	textarea{
+		height: 40px;
+	}
+}

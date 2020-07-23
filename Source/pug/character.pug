@@ -34,6 +34,8 @@
                 +roll('bones','bones')(data-i18n='bones').statbutton
                 .moves(data-i18n='throwdown')
                 .moves(data-i18n='protectsomeone')
+            
+            +stat-selector()
 
         //Center Column - Tanstaafl & XP
         .col45
@@ -109,3 +111,61 @@
                 .col50.harmtags
                     .taglabel.smalltaglabel(data-i18n='permanent')
                     +textarea('permanentags','tags')
+
+            .col100
+                .section-head.text(data-i18n='gear')
+                .gearsection
+                    fieldset.repeating_gear
+                        +checkbox('gearcheck', 'gearcheck')
+                        +text-input('geardesc', 'geardesc')
+        
+        //Next Section
+        .col100.bottomsection.flex-wrap
+            .col33.flex-wrap
+                //Playbook Moves
+                .col50
+                    .bottomsection-head.text(data-i18n='playbookmoves')
+                .col50
+                    .bottomsection-desc.text(data-i18n='playbookmovesdesc')
+                .col100
+                    .playbookmoves
+                        fieldset.repeating_playbookmoves
+                            +checkbox('movecheck','btmcheck')
+                            +text-input('movename')
+                            +textarea('movetext')
+
+            .col33.flex-wrap
+                //Specialty Moves
+                .col50
+                    .bottomsection-head.text(data-i18n='specialty')
+                .col50
+                    .bottomsection-desc.text(data-i18n='specialtydesc')
+                .col100
+                    .playbookmoves
+                        fieldset.repeating_specialtymoves
+                            +checkbox('speccheck','btmcheck')
+                            +text-input('specname')
+                            +textarea('spectext')
+                //Leveling Up
+                .col50
+                    .bottomsection-head.text(data-i18n='levelingup')
+                .col50
+                    .bottomsection-desc.text(data-i18n='levelingupdesc')
+                .col100
+                    .levelingup
+                        fieldset.repeating_levelup
+                            +checkbox('levelupcheck','btmcheck')
+                            +text-input('leveluptext')
+
+            .col33.flex-wrap
+                //Links
+                .col50
+                    .bottomsection-head.text(data-i18n='links')
+                .col50
+                    .bottomsection-desc.text(data-i18n='linksdesc')
+                .col100
+                    .linksection
+                        fieldset.repeating_links
+                            +text-input('linkcharacter')
+                            +textarea('linktext')
+
