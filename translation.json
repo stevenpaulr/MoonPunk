@@ -31,6 +31,7 @@
     "link_dust_4": "You've accidentally pissed them off before. Ask them what you did.",
     "link_dust_5": "You've helped get the out of a bad situation. Ask them how.",
     "link_dust_6": "The two of you helped raise someone. Who was it?",
+    "link_dust_7": "You’ve seen them from the other side of the Domes, but you’ve never had a chance to talk.",
     "link_dust_8": "They shoed solidarity to your cause in some what. How?",
     "links": "Links",
     "linksdesc": "Pick one for each other Punk",
@@ -91,7 +92,7 @@
     "thinkfast": "Think Fast",
     "throwdown": "Throw Down",
     "under_pressure": "Under Pressure",
-    "under_pressure_description": "Dusters work outside The Domes. It is the most dangerous job on Luna. With it comes pride and a personalized pressure suit that allows you to go in unatmosphered areas. Dusters take +1 ongoing when using their P-Suits.",
+    "under_pressure_description": "Dusters work outside The     . It is the most dangerous job on Luna. With it comes pride and a personalized pressure suit that allows you to go in unatmosphered areas. Dusters take +1 ongoing when using their P-Suits.",
     "usetech": "Use Tech",
     "vendor": "Vendor"
   }

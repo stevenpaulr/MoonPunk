@@ -1,339 +1,430 @@
-<div class="sheet-wrapper"><div class="flex"><!--Top info--><div class="col100 flex-wrap"><label class="col47"><input type="text" spellcheck="false" name="attr_character_name"/><div class="label text title" data-i18n="name"></div></label><label class="col24b"><input type="text" spellcheck="false" name="attr_pronouns"/><div class="label text title" data-i18n="pronouns"></div></label><div class="playbook-selector"><select name="attr_playbook"><optgroup><option>Select a Playbook</option><option value="duster">Duster</option><option value="enforcer">Enforcer</option><option value="guildy">Guildy</option><option value="labcoat">Labcoat</option><option value="mutant">Mutant</option><option value="newmooner">New Mooner</option><option value="oldtimer">Old Timer</option><option value="pilot">Pilot</option><option value="politician">Politician</option><option value="rocker">Rocker</option><option value="techie">Techie</option><option value="vendor">Vendor</option></optgroup></select></div><label class="col100"><input type="text" spellcheck="false" name="attr_ethos"/><div class="label text title" data-i18n="ethos"></div></label><!--Left Column--><div class="col15"><label class="col100 stats"><input type="number" name="attr_presence"/><button class="statbutton" type="roll" name="roll_presence" value="&{template:default} {{name=Presence}} {{charname=@{character_name} rolled plus Presence}} {{Roll=[[2d6+@{presence}+?{+/- tag?|0}]]}}" data-i18n="presence"></button><div class="moves" data-i18n="tanstaafl"></div><div class="moves" data-i18n="influencesomeone"></div></label><label class="col100 stats"><input type="number" name="attr_cool"/><button class="statbutton" type="roll" name="roll_cool" value="&{template:default} {{name=Cool}} {{charname=@{character_name} rolled plus Cool}} {{Roll=[[2d6+@{cool}+?{+/- tag?|0}]]}}" data-i18n="cool"></button><div class="moves" data-i18n="thinkfast"></div><div class="moves" data-i18n="actcasual"></div></label><label class="col100 stats"><input type="number" name="attr_smarts"/><button class="statbutton" type="roll" name="roll_smarts" value="&{template:default} {{name=Smarts}} {{charname=@{character_name} rolled plus Smarts}} {{Roll=[[2d6+@{smarts}+?{+/- tag?|0}]]}}" data-i18n="smarts"></button><div class="moves" data-i18n="usetech"></div><div class="moves" data-i18n="readroom"></div></label><label class="col100 stats"><input type="number" name="attr_bones"/><button class="statbutton" type="roll" name="roll_bones" value="&{template:default} {{name=Bones}} {{charname=@{character_name} rolled plus Bones}} {{Roll=[[2d6+@{bones}+?{+/- tag?|0}]]}}" data-i18n="bones"></button><div class="moves" data-i18n="throwdown"></div><div class="moves" data-i18n="protectsomeone"></div></label><div class="stat-selector"><select name="stats"><optgroup><option>Select Stats</option></optgroup></select></div><!--need to use Javascript to add options when playbook is selected--></div><!--Center Column - Tanstaafl & XP--><div class="col45"><div class="tanstaafl flex-wrap"><div class="col100 section-head text" data-i18n="tanstaafl"></div><div class="col50 oweLabel" data-i18n="owe"></div><div class="col50 owedLabel" data-i18n="owed"></div><div class="col50 owe"><fieldset class="repeating_owe"><input type="text" spellcheck="false" name="attr_owe"/></fieldset></div><div class="col50 owed"><fieldset class="repeating_owed"><input type="text" spellcheck="false" name="attr_owed"/></fieldset></div></div><div class="col100 exp flex-wrap"><div class="col100 section-head text" data-i18n="exp"></div><div class="col100 flex-wrap"><div class="xpboxcontainer tanstbox"><input class="xpbox" type="checkbox" name="attr_xp1" value="1"/><span class="xpbox"></span></div><div class="xpboxcontainer tanstbox"><input class="xpbox" type="checkbox" name="attr_xp2" value="1"/><span class="xpbox"></span></div><div class="xpboxcontainer"><input class="xpbox" type="checkbox" name="attr_xp3" value="1"/><span class="xpbox"></span></div><div class="xpboxcontainer"><input class="xpbox" type="checkbox" name="attr_xp4" value="1"/><span class="xpbox"></span></div><div class="xpboxcontainer"><input class="xpbox" type="checkbox" name="attr_xp5" value="1"/><span class="xpbox"></span></div><div class="xpboxcontainer"><input class="xpbox" type="checkbox" name="attr_xp6" value="1"/><span class="xpbox"></span></div><div class="xpboxcontainer"><input class="xpbox" type="checkbox" name="attr_xp7" value="1"/><span class="xpbox"></span></div></div></div><div class="col100 notes"><div class="col100 section-head text" data-i18n="movesnotes"></div><textarea spellcheck="false" name="attr_notes"></textarea></div></div><!--Right Column - Harm & Gear--><div class="col40"><div class="harm flex-wrap"><div class="col100 section-head text" data-i18n="harm"></div><div class="col24b harmlabel text" data-i18n="minor"></div><div class="col24b harmboxcontainer"><div class="harmboxsubcontainer"><input class="harmbox" type="checkbox" name="attr_minor1" value="1"/><span class="harmbox"></span></div><div class="harmboxsubcontainer"><input class="harmbox" type="checkbox" name="attr_minor2" value="1"/><span class="harmbox"></span></div></div><div class="col50 harmtags"><div class="taglabel" data-i18n="tags"></div><textarea spellcheck="false" name="attr_minortags"></textarea></div><div class="col24b harmlabel text" data-i18n="moderate"></div><div class="col24b harmboxcontainer"><div class="harmboxsubcontainer"><input class="harmbox" type="checkbox" name="attr_moderate1" value="1"/><span class="harmbox"></span></div><div class="harmboxsubcontainer"><input class="harmbox" type="checkbox" name="attr_moderate2" value="1"/><span class="harmbox"></span></div></div><div class="col50 harmtags"><div class="taglabel smalltaglabel" data-i18n="temporary"></div><textarea spellcheck="false" name="attr_temporarytags"></textarea></div><div class="col24b harmlabel text" data-i18n="major"></div><div class="col24b harmboxcontainer"><div class="harmboxsubcontainer"><input class="harmbox" type="checkbox" name="attr_major1" value="1"/><span class="harmbox"></span></div><div class="harmboxsubcontainer"><input class="harmbox" type="checkbox" name="attr_major2" value="1"/><span class="harmbox"></span></div></div><div class="col50 harmtags"><div class="taglabel smalltaglabel" data-i18n="needsattention"></div><textarea spellcheck="false" name="attr_needattentiontags"></textarea></div><div class="col24b harmlabel text" data-i18n="dying"></div><div class="col24b harmboxcontainer"><div class="harmboxsubcontainer"><input class="harmbox" type="checkbox" name="attr_dying1" value="1"/><span class="harmbox"></span></div></div><div class="col50 harmtags"><div class="taglabel smalltaglabel" data-i18n="permanent"></div><textarea spellcheck="false" name="attr_permanentags"></textarea></div></div><div class="col100"><div class="section-head text" data-i18n="gear"></div><div class="gearsection"><fieldset class="repeating_gear"><input class="gearcheck" type="checkbox" name="attr_gearcheck" value="1"/><span class="gearcheck"></span><input type="text" spellcheck="false" name="attr_geardesc"/></fieldset></div></div></div><!--Next Section--><div class="col100 bottomsection flex-wrap"><div class="col33 flex-wrap"><!--Playbook Moves--><div class="col50"><div class="bottomsection-head text" data-i18n="playbookmoves"></div></div><div class="col50"><div class="bottomsection-desc text" data-i18n="playbookmovesdesc"></div></div><div class="col100"><div class="playbookmoves"><fieldset class="repeating_playbookmoves"><input class="btmcheck" type="checkbox" name="attr_movecheck" value="1"/><span class="btmcheck"></span><input type="text" spellcheck="false" name="attr_movename"/><textarea spellcheck="false" name="attr_movetext"></textarea></fieldset></div></div></div><div class="col33 flex-wrap"><!--Specialty Moves--><div class="col50"><div class="bottomsection-head text" data-i18n="specialty"></div></div><div class="col50"><div class="bottomsection-desc text" data-i18n="specialtydesc"></div></div><div class="col100"><div class="playbookmoves"><fieldset class="repeating_specialtymoves"><input class="btmcheck" type="checkbox" name="attr_speccheck" value="1"/><span class="btmcheck"></span><input type="text" spellcheck="false" name="attr_specname"/><textarea spellcheck="false" name="attr_spectext"></textarea></fieldset></div></div><!--Leveling Up--><div class="col50"><div class="bottomsection-head text" data-i18n="levelingup"></div></div><div class="col50"><div class="bottomsection-desc text" data-i18n="levelingupdesc"></div></div><div class="col100"><div class="levelingup"><fieldset class="repeating_levelup"><input class="btmcheck" type="checkbox" name="attr_levelupcheck" value="1"/><span class="btmcheck"></span><input type="text" spellcheck="false" name="attr_leveluptext"/></fieldset></div></div></div><div class="col33 flex-wrap"><!--Links--><div class="col50"><div class="bottomsection-head text" data-i18n="links"></div></div><div class="col50"><div class="bottomsection-desc text" data-i18n="linksdesc"></div></div><div class="col100"><div class="linksection"><fieldset class="repeating_links"><input type="text" spellcheck="false" name="attr_linkcharacter"/><textarea spellcheck="false" name="attr_linktext"></textarea></fieldset></div></div></div></div></div></div></div>
+<div class="sheet-wrapper"><div class="flex"><!--Top info--><div class="col100 flex-wrap"><label class="col47"><input type="text" spellcheck="false" name="attr_character_name"/><div class="label text title" data-i18n="name"></div></label><label class="col24b"><input type="text" spellcheck="false" name="attr_pronouns"/><div class="label text title" data-i18n="pronouns"></div></label><div class="playbook-selector"><select name="attr_playbook"><optgroup><option>Select a Playbook</option><option value="duster">Duster</option><option value="enforcer">Enforcer</option><option value="guildy">Guildy</option><option value="labcoat">Labcoat</option><option value="mutant">Mutant</option><option value="newmooner">New Mooner</option><option value="oldtimer">Old Timer</option><option value="pilot">Pilot</option><option value="politician">Politician</option><option value="rocker">Rocker</option><option value="techie">Techie</option><option value="vendor">Vendor</option></optgroup></select></div><label class="col100"><input type="text" spellcheck="false" name="attr_ethos"/><div class="label text title" data-i18n="ethos"></div></label><!--Left Column--><div class="col15"><label class="col100 stats"><input type="number" name="attr_presence"/><button class="statbutton" type="roll" name="roll_presence" value="&{template:default} {{name=Presence}} {{charname=@{character_name} rolled plus Presence}} {{Roll=[[2d6+@{presence}+?{+/- tag?|0}]]}}" data-i18n="presence"></button><div class="moves" data-i18n="tanstaafl"></div><div class="moves" data-i18n="influencesomeone"></div></label><label class="col100 stats"><input type="number" name="attr_cool"/><button class="statbutton" type="roll" name="roll_cool" value="&{template:default} {{name=Cool}} {{charname=@{character_name} rolled plus Cool}} {{Roll=[[2d6+@{cool}+?{+/- tag?|0}]]}}" data-i18n="cool"></button><div class="moves" data-i18n="thinkfast"></div><div class="moves" data-i18n="actcasual"></div></label><label class="col100 stats"><input type="number" name="attr_smarts"/><button class="statbutton" type="roll" name="roll_smarts" value="&{template:default} {{name=Smarts}} {{charname=@{character_name} rolled plus Smarts}} {{Roll=[[2d6+@{smarts}+?{+/- tag?|0}]]}}" data-i18n="smarts"></button><div class="moves" data-i18n="usetech"></div><div class="moves" data-i18n="readroom"></div></label><label class="col100 stats"><input type="number" name="attr_bones"/><button class="statbutton" type="roll" name="roll_bones" value="&{template:default} {{name=Bones}} {{charname=@{character_name} rolled plus Bones}} {{Roll=[[2d6+@{bones}+?{+/- tag?|0}]]}}" data-i18n="bones"></button><div class="moves" data-i18n="throwdown"></div><div class="moves" data-i18n="protectsomeone"></div></label><div class="stat-selector"><select name="stats"><optgroup><option>Select Stats</option></optgroup></select></div><!--need to use Javascript to add options when playbook is selected--></div><!--Center Column - Tanstaafl & XP--><div class="col45"><div class="tanstaafl flex-wrap"><div class="col100 section-head text" data-i18n="tanstaafl"></div><div class="col50 oweLabel" data-i18n="owe"></div><div class="col50 owedLabel" data-i18n="owed"></div><div class="col50 owe"><fieldset class="repeating_owe"><input type="text" spellcheck="false" name="attr_owe" data-i18n-placeholder="owe_placeholder"/></fieldset></div><div class="col50 owed"><fieldset class="repeating_owed" data-i18n-placeholder="owed_placeholder"><input type="text" spellcheck="false" name="attr_owed"/></fieldset></div></div><div class="col100 exp flex-wrap"><div class="col100 section-head text" data-i18n="exp"></div><div class="col100 flex-wrap"><div class="xpboxcontainer tanstbox"><input class="xpbox" type="checkbox" name="attr_xp1" value="1"/><span class="xpbox"></span></div><div class="xpboxcontainer tanstbox"><input class="xpbox" type="checkbox" name="attr_xp2" value="1"/><span class="xpbox"></span></div><div class="xpboxcontainer"><input class="xpbox" type="checkbox" name="attr_xp3" value="1"/><span class="xpbox"></span></div><div class="xpboxcontainer"><input class="xpbox" type="checkbox" name="attr_xp4" value="1"/><span class="xpbox"></span></div><div class="xpboxcontainer"><input class="xpbox" type="checkbox" name="attr_xp5" value="1"/><span class="xpbox"></span></div><div class="xpboxcontainer"><input class="xpbox" type="checkbox" name="attr_xp6" value="1"/><span class="xpbox"></span></div><div class="xpboxcontainer"><input class="xpbox" type="checkbox" name="attr_xp7" value="1"/><span class="xpbox"></span></div></div></div><div class="col100 notes"><div class="col100 section-head text" data-i18n="movesnotes"></div><textarea spellcheck="false" name="attr_notes"></textarea></div></div><!--Right Column - Harm & Gear--><div class="col40"><div class="harm flex-wrap"><div class="col100 section-head text" data-i18n="harm"></div><div class="col24b harmlabel text" data-i18n="minor"></div><div class="col24b harmboxcontainer"><div class="harmboxsubcontainer"><input class="harmbox" type="checkbox" name="attr_minor1" value="1"/><span class="harmbox"></span></div><div class="harmboxsubcontainer"><input class="harmbox" type="checkbox" name="attr_minor2" value="1"/><span class="harmbox"></span></div></div><div class="col50 harmtags"><div class="taglabel" data-i18n="tags"></div><textarea spellcheck="false" name="attr_minortags"></textarea></div><div class="col24b harmlabel text" data-i18n="moderate"></div><div class="col24b harmboxcontainer"><div class="harmboxsubcontainer"><input class="harmbox" type="checkbox" name="attr_moderate1" value="1"/><span class="harmbox"></span></div><div class="harmboxsubcontainer"><input class="harmbox" type="checkbox" name="attr_moderate2" value="1"/><span class="harmbox"></span></div></div><div class="col50 harmtags"><div class="taglabel smalltaglabel" data-i18n="temporary"></div><textarea spellcheck="false" name="attr_temporarytags"></textarea></div><div class="col24b harmlabel text" data-i18n="major"></div><div class="col24b harmboxcontainer"><div class="harmboxsubcontainer"><input class="harmbox" type="checkbox" name="attr_major1" value="1"/><span class="harmbox"></span></div><div class="harmboxsubcontainer"><input class="harmbox" type="checkbox" name="attr_major2" value="1"/><span class="harmbox"></span></div></div><div class="col50 harmtags"><div class="taglabel smalltaglabel" data-i18n="needsattention"></div><textarea spellcheck="false" name="attr_needattentiontags"></textarea></div><div class="col24b harmlabel text" data-i18n="dying"></div><div class="col24b harmboxcontainer"><div class="harmboxsubcontainer"><input class="harmbox" type="checkbox" name="attr_dying1" value="1"/><span class="harmbox"></span></div></div><div class="col50 harmtags"><div class="taglabel smalltaglabel" data-i18n="permanent"></div><textarea spellcheck="false" name="attr_permanentags"></textarea></div></div><div class="col100"><div class="section-head text" data-i18n="gear"></div><div class="gearsection"><fieldset class="repeating_gear"><input class="gearcheck" type="checkbox" name="attr_gearcheck" value="1"/><span class="gearcheck"></span><input type="text" spellcheck="false" name="attr_name" data-i18n-placeholder="gear_name"/></fieldset></div></div></div><!--Next Section--><div class="col100 bottomsection flex-wrap"><div class="col33 flex-wrap"><!--Playbook Moves--><div class="col50"><div class="bottomsection-head text" data-i18n="playbookmoves"></div></div><div class="col50"><div class="bottomsection-desc text" data-i18n="playbookmovesdesc"></div></div><div class="col100"><div class="playbookmoves"><fieldset class="repeating_moves"><input class="btmcheck" type="checkbox" name="attr_movecheck" value="1"/><span class="btmcheck"></span><input type="text" spellcheck="false" name="attr_name" data-i18n-placeholder="moves_name"/><textarea spellcheck="false" name="attr_description" data-i18n-placeholder="moves_description"></textarea></fieldset></div></div></div><div class="col33 flex-wrap"><!--Specialty Moves--><div class="col50"><div class="bottomsection-head text" data-i18n="specialty"></div></div><div class="col50"><div class="bottomsection-desc text" data-i18n="specialtydesc"></div></div><div class="col100"><div class="playbookmoves"><fieldset class="repeating_specialties"><input class="btmcheck" type="checkbox" name="attr_speccheck" value="1"/><span class="btmcheck"></span><input type="text" spellcheck="false" name="attr_name" data-i18n-placeholder="moves_name"/><textarea spellcheck="false" name="attr_description" data-i18n-placeholder="moves_description"></textarea></fieldset></div></div><!--Leveling Up--><div class="col50"><div class="bottomsection-head text" data-i18n="levelingup"></div></div><div class="col50"><div class="bottomsection-desc text" data-i18n="levelingupdesc"></div></div><div class="col100"><div class="levelingup"><fieldset class="repeating_leveling"><input class="btmcheck" type="checkbox" name="attr_levelupcheck" value="1"/><span class="btmcheck"></span><input type="text" spellcheck="false" name="attr_name"/></fieldset></div></div></div><div class="col33 flex-wrap"><!--Links--><div class="col50"><div class="bottomsection-head text" data-i18n="links"></div></div><div class="col50"><div class="bottomsection-desc text" data-i18n="linksdesc"></div></div><div class="col100"><div class="linksection"><fieldset class="repeating_links"><input type="text" spellcheck="false" name="attr_linkcharacter" data-i18n-placeholder="player"/><textarea spellcheck="false" name="attr_name" data-i18n-placeholder="links_name"></textarea></fieldset></div></div></div></div></div></div></div>
 <script type="text/worker">
 "use strict";
 const data = {
+	"leveling": {
+		"advanced_advancements": [
+		    {"name":"change_class"},
+		    {"name":"p1stat"},
+		    {"name":"take_advanced_move"},
+		    {"name":"take_advanced_move"},
+		    {"name":"recruit_allies"},
+			{"name":"hang_jacket"}
+		],
+		"basic_advancements": [
+			{"name":"p1bones"},
+			{"name":"p1presence"},
+			{"name":"p1cool"},
+			{"name":"p1smarts"},
+			{"name":"take_another_move"},
+			{"name":"take_move_another_playbook"},
+			{"name":"take_move_another_playbook"}
+		]
+	},
 	"playbooks": {
 		"duster": {
-			"stats" : {
-				"1" : {
-					"presence" : -1,
-					"cool" : 2,
+			"gear": [
+				{"name":"p:suit"},
+				{"name":"safety_tether"}
+			],
+			"links": [
+				{"name":"link_dust_1"},
+				{"name":"link_dust_2"},
+				{"name":"link_dust_3"},
+				{"name":"link_dust_4"},
+				{"name":"link_dust_5"},
+				{"name":"link_dust_6"},
+				{"name":"link_dust_7"},
+				{"name":"link_dust_8"}
+			],
+			"moves": [
+				{"name":"practiced_hand"},
+				{"name":"survival_kit"},
+				{"name":"running_on_instinct"},
+				{"name":"ice_in_my_veins"},
+				{"name":"danger_sense"},
+				{"name":"juke_box_hero"},
+				{"name":"space_cowboy"},
+				{"name":"rope_trick"},
+				{"name":"tell_me_i_cant"}
+			],
+			"specialties": [
+				{"name":"under_pressure"}
+			],
+			"stats": {
+				"1": {
+					"presence": -1,
+					"cool": 2,
 					"smarts": 1,
 					"bones": 1
 				},
-				"2" : {
-					"presence" : -1,
-					"cool" : 2,
+				"2": {
+					"presence": -1,
+					"cool": 2,
 					"smarts": 2,
 					"bones": -1
 				},
-				"3" : {
-					"presence" : -0,
-					"cool" : 2,
+				"3": {
+					"presence": 0,
+					"cool": 2,
 					"smarts": 1,
 					"bones": 0
 				},
-				"4" : {
-					"presence" : 1,
-					"cool" : 2,
+				"4": {
+					"presence": 1,
+					"cool": 2,
 					"smarts": 1,
 					"bones": -1
 				}
 			}
 		},
 		"enforcer": {
-			"stats" : {
-				"1" : {
-					"presence" : -1,
-					"cool" : 2,
+			"gear":[],
+			"links":[],
+			"moves":[],
+			"specialties":[],
+			"stats": {
+				"1": {
+					"presence": -1,
+					"cool": 2,
 					"smarts": 1,
 					"bones": 1
 				},
-				"2" : {
-					"presence" : -1,
-					"cool" : 2,
+				"2": {
+					"presence": -1,
+					"cool": 2,
 					"smarts": 2,
 					"bones": -1
 				},
-				"3" : {
-					"presence" : -0,
-					"cool" : 2,
+				"3": {
+					"presence": 0,
+					"cool": 2,
 					"smarts": 1,
 					"bones": 0
 				},
-				"4" : {
-					"presence" : 1,
-					"cool" : 2,
+				"4": {
+					"presence": 1,
+					"cool": 2,
 					"smarts": 1,
 					"bones": -1
 				}
 			}
 		},
 		"guildy": {
-			"stats" : {
-				"1" : {
-					"presence" : -1,
-					"cool" : 2,
+			"gear":[],
+			"links":[],
+			"moves":[],
+			"specialties":[],
+			"stats": {
+				"1": {
+					"presence": -1,
+					"cool": 2,
 					"smarts": 1,
 					"bones": 1
 				},
-				"2" : {
-					"presence" : -1,
-					"cool" : 2,
+				"2": {
+					"presence": -1,
+					"cool": 2,
 					"smarts": 2,
 					"bones": -1
 				},
-				"3" : {
-					"presence" : -0,
-					"cool" : 2,
+				"3": {
+					"presence": 0,
+					"cool": 2,
 					"smarts": 1,
 					"bones": 0
 				},
-				"4" : {
-					"presence" : 1,
-					"cool" : 2,
+				"4": {
+					"presence": 1,
+					"cool": 2,
 					"smarts": 1,
 					"bones": -1
 				}
 			}
 		},
 		"labcoat": {
-			"stats" : {
-				"1" : {
-					"presence" : -1,
-					"cool" : 2,
+			"gear":[],
+			"links":[],
+			"moves":[],
+			"specialties":[],
+			"stats": {
+				"1": {
+					"presence": -1,
+					"cool": 2,
 					"smarts": 1,
 					"bones": 1
 				},
-				"2" : {
-					"presence" : -1,
-					"cool" : 2,
+				"2": {
+					"presence": -1,
+					"cool": 2,
 					"smarts": 2,
 					"bones": -1
 				},
-				"3" : {
-					"presence" : -0,
-					"cool" : 2,
+				"3": {
+					"presence": 0,
+					"cool": 2,
 					"smarts": 1,
 					"bones": 0
 				},
-				"4" : {
-					"presence" : 1,
-					"cool" : 2,
+				"4": {
+					"presence": 1,
+					"cool": 2,
 					"smarts": 1,
 					"bones": -1
 				}
 			}
 		},
 		"mutant": {
-			"stats" : {
-				"1" : {
-					"presence" : -1,
-					"cool" : 2,
+			"gear":[],
+			"links":[],
+			"moves":[],
+			"specialties":[],
+			"stats": {
+				"1": {
+					"presence": -1,
+					"cool": 2,
 					"smarts": 1,
 					"bones": 1
 				},
-				"2" : {
-					"presence" : -1,
-					"cool" : 2,
+				"2": {
+					"presence": -1,
+					"cool": 2,
 					"smarts": 2,
 					"bones": -1
 				},
-				"3" : {
-					"presence" : -0,
-					"cool" : 2,
+				"3": {
+					"presence": 0,
+					"cool": 2,
 					"smarts": 1,
 					"bones": 0
 				},
-				"4" : {
-					"presence" : 1,
-					"cool" : 2,
+				"4": {
+					"presence": 1,
+					"cool": 2,
 					"smarts": 1,
 					"bones": -1
 				}
 			}
 		},
 		"newmooner": {
-			"stats" : {
-				"1" : {
-					"presence" : -1,
-					"cool" : 2,
+			"gear":[],
+			"links":[],
+			"moves":[],
+			"specialties":[],
+			"stats": {
+				"1": {
+					"presence": -1,
+					"cool": 2,
 					"smarts": 1,
 					"bones": 1
 				},
-				"2" : {
-					"presence" : -1,
-					"cool" : 2,
+				"2": {
+					"presence": -1,
+					"cool": 2,
 					"smarts": 2,
 					"bones": -1
 				},
-				"3" : {
-					"presence" : -0,
-					"cool" : 2,
+				"3": {
+					"presence": 0,
+					"cool": 2,
 					"smarts": 1,
 					"bones": 0
 				},
-				"4" : {
-					"presence" : 1,
-					"cool" : 2,
+				"4": {
+					"presence": 1,
+					"cool": 2,
 					"smarts": 1,
 					"bones": -1
 				}
 			}
 		},
 		"oldtimer": {
-			"stats" : {
-				"1" : {
-					"presence" : -1,
-					"cool" : 2,
+			"gear":[],
+			"links":[],
+			"moves":[],
+			"specialties":[],
+			"stats": {
+				"1": {
+					"presence": -1,
+					"cool": 2,
 					"smarts": 1,
 					"bones": 1
 				},
-				"2" : {
-					"presence" : -1,
-					"cool" : 2,
+				"2": {
+					"presence": -1,
+					"cool": 2,
 					"smarts": 2,
 					"bones": -1
 				},
-				"3" : {
-					"presence" : -0,
-					"cool" : 2,
+				"3": {
+					"presence": 0,
+					"cool": 2,
 					"smarts": 1,
 					"bones": 0
 				},
-				"4" : {
-					"presence" : 1,
-					"cool" : 2,
+				"4": {
+					"presence": 1,
+					"cool": 2,
 					"smarts": 1,
 					"bones": -1
 				}
 			}
 		},
 		"pilot": {
-			"stats" : {
-				"1" : {
-					"presence" : -1,
-					"cool" : 2,
+			"gear":[],
+			"links":[],
+			"moves":[],
+			"specialties":[],
+			"stats": {
+				"1": {
+					"presence": -1,
+					"cool": 2,
 					"smarts": 1,
 					"bones": 1
 				},
-				"2" : {
-					"presence" : -1,
-					"cool" : 2,
+				"2": {
+					"presence": -1,
+					"cool": 2,
 					"smarts": 2,
 					"bones": -1
 				},
-				"3" : {
-					"presence" : -0,
-					"cool" : 2,
+				"3": {
+					"presence": 0,
+					"cool": 2,
 					"smarts": 1,
 					"bones": 0
 				},
-				"4" : {
-					"presence" : 1,
-					"cool" : 2,
+				"4": {
+					"presence": 1,
+					"cool": 2,
 					"smarts": 1,
 					"bones": -1
 				}
 			}
 		},
 		"politician": {
-			"stats" : {
-				"1" : {
-					"presence" : -1,
-					"cool" : 2,
+			"gear":[],
+			"links":[],
+			"moves":[],
+			"specialties":[],
+			"stats": {
+				"1": {
+					"presence": -1,
+					"cool": 2,
 					"smarts": 1,
 					"bones": 1
 				},
-				"2" : {
-					"presence" : -1,
-					"cool" : 2,
+				"2": {
+					"presence": -1,
+					"cool": 2,
 					"smarts": 2,
 					"bones": -1
 				},
-				"3" : {
-					"presence" : -0,
-					"cool" : 2,
+				"3": {
+					"presence": 0,
+					"cool": 2,
 					"smarts": 1,
 					"bones": 0
 				},
-				"4" : {
-					"presence" : 1,
-					"cool" : 2,
+				"4": {
+					"presence": 1,
+					"cool": 2,
 					"smarts": 1,
 					"bones": -1
 				}
 			}
 		},
 		"rocker": {
-			"stats" : {
-				"1" : {
-					"presence" : -1,
-					"cool" : 2,
+			"gear":[],
+			"links":[],
+			"moves":[],
+			"specialties":[],
+			"stats": {
+				"1": {
+					"presence": -1,
+					"cool": 2,
 					"smarts": 1,
 					"bones": 1
 				},
-				"2" : {
-					"presence" : -1,
-					"cool" : 2,
+				"2": {
+					"presence": -1,
+					"cool": 2,
 					"smarts": 2,
 					"bones": -1
 				},
-				"3" : {
-					"presence" : -0,
-					"cool" : 2,
+				"3": {
+					"presence": 0,
+					"cool": 2,
 					"smarts": 1,
 					"bones": 0
 				},
-				"4" : {
-					"presence" : 1,
-					"cool" : 2,
+				"4": {
+					"presence": 1,
+					"cool": 2,
 					"smarts": 1,
 					"bones": -1
 				}
 			}
 		},
 		"techie": {
-			"stats" : {
-				"1" : {
-					"presence" : -1,
-					"cool" : 2,
+			"gear":[],
+			"links":[],
+			"moves":[],
+			"specialties":[],
+			"stats": {
+				"1": {
+					"presence": -1,
+					"cool": 2,
 					"smarts": 1,
 					"bones": 1
 				},
-				"2" : {
-					"presence" : -1,
-					"cool" : 2,
+				"2": {
+					"presence": -1,
+					"cool": 2,
 					"smarts": 2,
 					"bones": -1
 				},
-				"3" : {
-					"presence" : -0,
-					"cool" : 2,
+				"3": {
+					"presence": 0,
+					"cool": 2,
 					"smarts": 1,
 					"bones": 0
 				},
-				"4" : {
-					"presence" : 1,
-					"cool" : 2,
+				"4": {
+					"presence": 1,
+					"cool": 2,
 					"smarts": 1,
 					"bones": -1
 				}
 			}
 		},
 		"vendor": {
-			"stats" : {
-				"1" : {
-					"presence" : -1,
-					"cool" : 2,
+			"gear":[],
+			"links":[],
+			"moves":[],
+			"specialties":[],
+			"stats": {
+				"1": {
+					"presence": -1,
+					"cool": 2,
 					"smarts": 1,
 					"bones": 1
 				},
-				"2" : {
-					"presence" : -1,
-					"cool" : 2,
+				"2": {
+					"presence": -1,
+					"cool": 2,
 					"smarts": 2,
 					"bones": -1
 				},
-				"3" : {
-					"presence" : -0,
-					"cool" : 2,
+				"3": {
+					"presence": 0,
+					"cool": 2,
 					"smarts": 1,
 					"bones": 0
 				},
-				"4" : {
-					"presence" : 1,
-					"cool" : 2,
+				"4": {
+					"presence": 1,
+					"cool": 2,
 					"smarts": 1,
 					"bones": -1
 				}
@@ -345,6 +436,161 @@ const sheetVersion = "0.1";
 const sheetName = "Moon Punk";
 const getTranslation = (key) => (getTranslationByKey(key) || "NO_TRANSLATION_FOUND");
 //Translate all of the data
-//Object.keys(data.playbook).forEach(playbook )
-console.log(data);
+data.leveling.advanced_advancements.forEach(item => {
+	item.name = getTranslation(item.name);
+});
+data.leveling.basic_advancements.forEach(item => {
+	item.name = getTranslation(item.name);
+});
+Object.keys(data.playbooks).forEach(playbook =>{
+	//translate the gear
+	data.playbooks[playbook].gear.forEach(item => {
+		item.name = getTranslation(item.name);
+	});
+	//translate links to toher characters
+	data.playbooks[playbook].links.forEach(item => {
+		item.name = getTranslation(item.name);
+	});
+	//translate moves
+	data.playbooks[playbook].moves.forEach(item => {
+		item.description = getTranslation(item.name+'_description');
+		item.name = getTranslation(item.name);
+	});
+	//translate specialties
+	data.playbooks[playbook].specialties.forEach(item => {
+		item.description = getTranslation(item.name+'_description');
+		item.name = getTranslation(item.name);
+	});
+});
+/* Utility functions - shouldn't need to touch most of these */
+//Completely lifted from joesinghaus
+//There are probably many that I don't need ¯\_(ツ)_/¯
+const mySetAttrs = (attrs, options, callback) => {
+	const finalAttrs = Object.keys(attrs).reduce((m, k) => {
+		m[k] = String(attrs[k]);
+		return m;
+	}, {});
+	console.log(finalAttrs);
+	setAttrs(finalAttrs, options, callback);
+},
+setAttr = (name, value) => {
+	getAttrs([name], v => {
+		const setting = {};
+		if (v[name] !== String(value)) setting[name] = String(value);
+		setAttrs(setting);
+	});
+},
+fillRepeatingSectionFromData = (sectionName, dataList, autogen, callback) => {
+	callback = callback || (() => {});
+	getSectionIDs(`repeating_${sectionName}`, idList => {
+		const existingRowAttributes = [
+			...idList.map(id => `repeating_${sectionName}_${id}_name`),
+			...idList.map(id => `repeating_${sectionName}_${id}_autogen`)
+		];
+		getAttrs(existingRowAttributes, v => {
+			/* Delete auto-generated rows */
+			if (autogen) {
+				idList = idList.filter(id => {
+					if (v[`repeating_${sectionName}_${id}_autogen`]) {
+						removeRepeatingRow(`repeating_${sectionName}_${id}`);
+						return false;
+					}
+					else return true;
+				});
+			}
+			const existingRowNames = idList.map(id => v[`repeating_${sectionName}_${id}_name`]),
+				createdIDs = [],
+				setting = dataList.filter(o => !existingRowNames.includes(o.name))
+					.map(o => {
+						let rowID;
+						while (!rowID) {
+							let newID = generateRowID();
+							if (!createdIDs.includes(newID)) {
+								rowID = newID;
+								createdIDs.push(rowID);
+							}
+						}
+						const newAttrs = {};
+						if (autogen) {
+							newAttrs[`repeating_${sectionName}_${rowID}_autogen`] = "1";
+						}
+						return Object.keys(o).reduce((m, key) => {
+							m[`repeating_${sectionName}_${rowID}_${key}`] = o[key];
+							return m;
+						}, newAttrs);
+					})
+					.reduce((m, o) => Object.assign(m, o), {});
+			mySetAttrs(setting, {}, callback);
+		});
+	});
+},
+diceMagic = num => {
+	const range = end => [...Array(end + 1).keys()].slice(1);
+	if (num > 0) return `dice=${range(num).map(() => "[[d6]]").join("&"+"#44"+"; ")}`;
+	else return "zerodice=[[d6]]&"+"#44"+"; [[d6]]";
+},
+buildRollFormula = base => {
+	return ` {{?{@{bonusdice}|${
+		[0, 1, 2, 3, 4, 5, 6, -1, -2, -3].map(n => `${n},${diceMagic(n + (parseInt(base) || 0))}`).join("|")
+	}}}}`;
+},
+buildNumdiceFormula = () => {
+	return ` {{?{${getTranslation("numberofdice")}|${
+		[0, 1, 2, 3, 4, 5, 6].map(n => `${n},${diceMagic(n)}`).join("|")
+	}}}}`;
+},
+emptyFirstRowIfUnnamed = sectionName => {
+	getSectionIDs(`repeating_${sectionName}`, idList => {
+		const id = idList[0];
+		getAttrs([`repeating_${sectionName}_${id}_name`], v => {
+			if (!v[`repeating_${sectionName}_${id}_name`]) {
+				removeRepeatingRow(`repeating_${sectionName}_${id}`);
+			}
+		});
+	});
+},
+handleBoxesFill = (name, upToFour) => {
+	on(`change:${name}1 change:${name}2 change:${name}3 change:${name}4`, event => {
+		if (event.sourceType !== "player") return;
+		getAttrs([event.sourceAttribute], v => {
+			const rName = event.sourceAttribute.slice(0, -1),
+				setting = {};
+			if (String(v[event.sourceAttribute]) === "1") {
+				switch (event.sourceAttribute.slice(-1)) {
+				case "4":
+					setting[`${rName}3`] = 1;
+					/* falls through */
+				case "3":
+					setting[`${rName}2`] = 1;
+					/* falls through */
+				case "2":
+					setting[`${rName}1`] = 1;
+				}
+			}
+			if (String(v[event.sourceAttribute]) === "0") {
+				switch (event.sourceAttribute.slice(-1)) {
+				case "1":
+					setting[`${rName}2`] = 0;
+					/* falls through */
+				case "2":
+					setting[`${rName}3`] = 0;
+					/* falls through */
+				case "3":
+					if (upToFour) setting[`${rName}4`] = 0;
+				}
+			}
+			mySetAttrs(setting);
+		});
+	});
+};
+on("change:playbook", event => {
+	getAttrs(["playbook", "change_attributes"], v => {
+		console.log(v.playbook);
+		fillRepeatingSectionFromData("gear",data.playbooks[v.playbook].gear, true);
+		fillRepeatingSectionFromData("moves",data.playbooks[v.playbook].moves, true);
+		fillRepeatingSectionFromData("specialties",data.playbooks[v.playbook].specialties, true);
+		fillRepeatingSectionFromData("links",data.playbooks[v.playbook].links, true);
+		fillRepeatingSectionFromData("leveling",[].concat(data.leveling.basic_advancements,data.leveling.advanced_advancements), true);
+	});
+});
 </script>

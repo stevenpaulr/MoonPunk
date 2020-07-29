@@ -45,9 +45,9 @@
                 .col50.owedLabel(data-i18n='owed')
                 .col50.owe
                     fieldset.repeating_owe
-                        +text-input('owe')
+                        +text-input('owe')(data-i18n-placeholder='owe_placeholder')
                 .col50.owed
-                    fieldset.repeating_owed
+                    fieldset.repeating_owed(data-i18n-placeholder='owed_placeholder')
                         +text-input('owed')
             .col100.exp.flex-wrap
                 .col100.section-head.text(data-i18n='exp')
@@ -117,7 +117,7 @@
                 .gearsection
                     fieldset.repeating_gear
                         +checkbox('gearcheck', 'gearcheck')
-                        +text-input('geardesc', 'geardesc')
+                        +text-input('name')(data-i18n-placeholder='gear_name')
         
         //Next Section
         .col100.bottomsection.flex-wrap
@@ -129,10 +129,10 @@
                     .bottomsection-desc.text(data-i18n='playbookmovesdesc')
                 .col100
                     .playbookmoves
-                        fieldset.repeating_playbookmoves
+                        fieldset.repeating_moves
                             +checkbox('movecheck','btmcheck')
-                            +text-input('movename')
-                            +textarea('movetext')
+                            +text-input('name')(data-i18n-placeholder='moves_name')
+                            +textarea('description')(data-i18n-placeholder='moves_description')
 
             .col33.flex-wrap
                 //Specialty Moves
@@ -142,10 +142,10 @@
                     .bottomsection-desc.text(data-i18n='specialtydesc')
                 .col100
                     .playbookmoves
-                        fieldset.repeating_specialtymoves
+                        fieldset.repeating_specialties
                             +checkbox('speccheck','btmcheck')
-                            +text-input('specname')
-                            +textarea('spectext')
+                            +text-input('name')(data-i18n-placeholder='moves_name')
+                            +textarea('description')(data-i18n-placeholder='moves_description')
                 //Leveling Up
                 .col50
                     .bottomsection-head.text(data-i18n='levelingup')
@@ -153,9 +153,9 @@
                     .bottomsection-desc.text(data-i18n='levelingupdesc')
                 .col100
                     .levelingup
-                        fieldset.repeating_levelup
+                        fieldset.repeating_leveling
                             +checkbox('levelupcheck','btmcheck')
-                            +text-input('leveluptext')
+                            +text-input('name')
 
             .col33.flex-wrap
                 //Links
@@ -166,6 +166,6 @@
                 .col100
                     .linksection
                         fieldset.repeating_links
-                            +text-input('linkcharacter')
-                            +textarea('linktext')
+                            +text-input('linkcharacter')(data-i18n-placeholder='player')
+                            +textarea('name')(data-i18n-placeholder='links_name')
 

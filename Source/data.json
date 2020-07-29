@@ -1,52 +1,52 @@
 {
 	"leveling": {
 		"advanced_advancements": [
-		    "change_class",
-		    "p1stat",
-		    "take_advanced_move",
-		    "take_advanced_move",
-		    "recruit_allies",
-		    "hang_jacket"
-		    ],
+		    {"name":"change_class"},
+		    {"name":"p1stat"},
+		    {"name":"take_advanced_move"},
+		    {"name":"take_advanced_move"},
+		    {"name":"recruit_allies"},
+			{"name":"hang_jacket"}
+		],
 		"basic_advancements": [
-			"p1bones",
-			"p1presence",
-			"p1cool",
-			"p1smarts",
-			"take_another_move",
-			"take_move_another_playbook",
-			"take_move_another_playbook"
+			{"name":"p1bones"},
+			{"name":"p1presence"},
+			{"name":"p1cool"},
+			{"name":"p1smarts"},
+			{"name":"take_another_move"},
+			{"name":"take_move_another_playbook"},
+			{"name":"take_move_another_playbook"}
 		]
 	},
 	"playbooks": {
 		"duster": {
 			"gear": [
-				"p:suit",
-				"safety_tether"
+				{"name":"p:suit"},
+				{"name":"safety_tether"}
 			],
 			"links": [
-				"link_dust_1",
-				"link_dust_2",
-				"link_dust_3",
-				"link_dust_4",
-				"link_dust_5",
-				"link_dust_6",
-				"link_dust_7",
-				"link_dust_8"
+				{"name":"link_dust_1"},
+				{"name":"link_dust_2"},
+				{"name":"link_dust_3"},
+				{"name":"link_dust_4"},
+				{"name":"link_dust_5"},
+				{"name":"link_dust_6"},
+				{"name":"link_dust_7"},
+				{"name":"link_dust_8"}
 			],
 			"moves": [
-				"practiced_hand",
-				"survival_kit",
-				"running_on_instinct",
-				"ice_in_my_veins",
-				"danger_sense",
-				"juke_box_hero",
-				"space_cowboy",
-				"rope_trick",
-				"tell_me_i_cant"
+				{"name":"practiced_hand"},
+				{"name":"survival_kit"},
+				{"name":"running_on_instinct"},
+				{"name":"ice_in_my_veins"},
+				{"name":"danger_sense"},
+				{"name":"juke_box_hero"},
+				{"name":"space_cowboy"},
+				{"name":"rope_trick"},
+				{"name":"tell_me_i_cant"}
 			],
 			"specialties": [
-				"under_pressure"
+				{"name":"under_pressure"}
 			],
 			"stats": {
 				"1": {
@@ -76,6 +76,7 @@
 			}
 		},
 		"enforcer": {
+			"gear":[],
 			"links":[],
 			"moves":[],
 			"specialties":[],
@@ -107,6 +108,7 @@
 			}
 		},
 		"guildy": {
+			"gear":[],
 			"links":[],
 			"moves":[],
 			"specialties":[],
@@ -138,6 +140,7 @@
 			}
 		},
 		"labcoat": {
+			"gear":[],
 			"links":[],
 			"moves":[],
 			"specialties":[],
@@ -169,6 +172,7 @@
 			}
 		},
 		"mutant": {
+			"gear":[],
 			"links":[],
 			"moves":[],
 			"specialties":[],
@@ -200,6 +204,7 @@
 			}
 		},
 		"newmooner": {
+			"gear":[],
 			"links":[],
 			"moves":[],
 			"specialties":[],
@@ -231,6 +236,7 @@
 			}
 		},
 		"oldtimer": {
+			"gear":[],
 			"links":[],
 			"moves":[],
 			"specialties":[],
@@ -262,6 +268,7 @@
 			}
 		},
 		"pilot": {
+			"gear":[],
 			"links":[],
 			"moves":[],
 			"specialties":[],
@@ -293,6 +300,7 @@
 			}
 		},
 		"politician": {
+			"gear":[],
 			"links":[],
 			"moves":[],
 			"specialties":[],
@@ -324,6 +332,7 @@
 			}
 		},
 		"rocker": {
+			"gear":[],
 			"links":[],
 			"moves":[],
 			"specialties":[],
@@ -355,6 +364,7 @@
 			}
 		},
 		"techie": {
+			"gear":[],
 			"links":[],
 			"moves":[],
 			"specialties":[],
@@ -386,6 +396,7 @@
 			}
 		},
 		"vendor": {
+			"gear":[],
 			"links":[],
 			"moves":[],
 			"specialties":[],
