@@ -212,17 +212,48 @@
   width: 100%;
   text-align: center;
 }
-.sheet-stat-selector select {
-  border: 1px solid black;
-  border-radius: 0;
-  font-size: 12px;
-  letter-spacing: 1px;
-  padding-top: 0;
-  height: 19px;
+.sheet-stats .sheet-statresetbutton {
+  border: 0;
+  background-color: black;
+  color: white;
+  margin: 0 !important;
+  font-size: 18px;
   width: 100%;
+  text-align: center;
 }
-.sheet-stat-selector optgroup {
-  font-size: 12px;
+.sheet-stat-selector textarea {
+  position: absolute;
+  border: 0;
+  height: 70px;
+  font-size: 18px;
+  z-index: -1;
+  top: 10px;
+  left: 2px;
+  resize: none;
+}
+.sheet-stat-selector button {
+  border: 1px solid black;
+  width: 100%;
+  height: 70px;
+  padding: 0;
+  z-index: 1;
+  background-color: transparent;
+  margin-top: 10px;
+}
+.sheet-stat-selector .sheet-text {
+  margin-top: 20px;
+  color: red;
+}
+.sheet-stat-selector .repcontrol {
+  display: none !important;
+}
+.sheet-statcheck[value="0"] ~ .sheet-stats,
+.sheet-statcheck[value="1"] ~ .sheet-stat-selector {
+  display: none;
+}
+.sheet-statcheck[value="1"] ~ .sheet-stats,
+.sheet-statcheck[value="0"] ~ .sheet-stat-selector {
+  display: block;
 }
 .sheet-flexwidth[value="0"] ~ .sheet-container {
   width: 860px;

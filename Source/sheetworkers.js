@@ -173,6 +173,62 @@ on("change:playbook", event => {
 		fillRepeatingSectionFromData("specialties",data.playbooks[v.playbook].specialties, true);
 		fillRepeatingSectionFromData("links",data.playbooks[v.playbook].links, true);
 		fillRepeatingSectionFromData("leveling",[].concat(data.leveling.basic_advancements,data.leveling.advanced_advancements), true);
+		fillRepeatingSectionFromData("stats", data.playbooks[v.playbook].stats, true);
+
+
 	});
+
+	setAttr("cool", 0);
+	setAttr("smarts", 0);
+	setAttr("bones", 0);
+	setAttr("presence", 0);
+	setAttr("chosestats", 0);
+
+});
+
+on('clicked:resetstats', function() {
+	setAttr("cool", 0);
+	setAttr("smarts", 0);
+	setAttr("bones", 0);
+	setAttr("presence", 0);
+	setAttr("chosestats", 0);
+});
+
+on('clicked:repeating_stats', function(eventInfo) {
+	console.log(eventInfo);
+
+	const trigger = eventInfo.sourceAttribute.split('_');
+    const rowid = trigger[2];
+	
+	console.log(rowid);
+
+	getAttrs(["repeating_stats_" + rowid + "_name",
+	 "repeating_stats_" + rowid + "_cool",
+	 "repeating_stats_" + rowid + "_smarts",
+	 "repeating_stats_" + rowid + "_bones",
+	 "repeating_stats_" + rowid + "_presence",], s => {
+
+		Object.keys(s).forEach(key => {
+
+			if(key.includes("cool")){
+				setAttr("cool", s[key]);
+			}
+			if(key.includes("smarts")){
+				setAttr("smarts", s[key]);
+			}
+			if(key.includes("bones")){
+				setAttr("bones", s[key]);
+			}
+			if(key.includes("presence")){
+				setAttr("presence", s[key]);
+			}
+
+		});
+
+	});
+
+	setAttr("chosestats", 1);
+
+
 
 });

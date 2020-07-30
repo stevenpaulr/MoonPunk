@@ -54,12 +54,6 @@ mixin playbook-selector()
 					option(value=playbook) #{translation[playbook]}
 
 
-mixin stat-selector()
-	.stat-selector
-		select(name='stats')
-			optgroup
-				option() #{translation["choosestats"]}
-	//need to use Javascript to add options when playbook is selected
 
 .sheet-wrapper
 	include pug/character.pug
