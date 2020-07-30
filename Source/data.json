@@ -21,8 +21,8 @@
 	"playbooks": {
 		"duster": {
 			"gear": [
-				{"name":"p:suit"},
-				{"name":"safety_tether"}
+				{"name":"p:suit", "gearcheck":1},
+				{"name":"safety_tether", "gearcheck":1}
 			],
 			"links": [
 				{"name":"link_dust_1"},
@@ -46,12 +46,12 @@
 				{"name":"tell_me_i_cant"}
 			],
 			"specialties": [
-				{"name":"under_pressure"}
+				{"name":"under_pressure", "speccheck":1}
 			],
 			"stats": [
 				
 				{
-					"name":" Presence:-1&#13;&#10;Cool:2&#13;&#10;Smarts:1&#13;&#10;Bones:1",
+					"name":"p-1c2s1b1",
 					"presence": -1,
 					"cool": 2,
 					"smarts": 1,
@@ -59,7 +59,7 @@
 					"index":0
 				},
 				{
-					"name":" Presence:-1\n Cool:2\n Smarts:2\n Bones:-1",
+					"name":"p-1c2s2b-1",
 					"presence": -1,
 					"cool": 2,
 					"smarts": 2,
@@ -67,7 +67,7 @@
 					"index":1
 				},
 				{
-					"name":" Presence:0\n Cool:2\n Smarts:1\n Bones:0",
+					"name":"p0c2s1b0",
 					"presence": 0,
 					"cool": 2,
 					"smarts": 1,
@@ -75,7 +75,7 @@
 					"index":2
 				},
 				{
-					"name":" Presence:1\n Cool:2\n Smarts:1\n Bones:-1",
+					"name":"p1c2s1b-1",
 					"presence": 1,
 					"cool": 2,
 					"smarts": 1,
@@ -85,356 +85,475 @@
 			]
 		},
 		"enforcer": {
-			"gear":[],
-			"links":[],
-			"moves":[],
-			"specialties":[],
-			"stats": {
-				"1": {
+			"gear":[
+				{"name":"cool_outfit", "gearcheck":1},
+				{"name":"brass_knuckles", "gearcheck":1}
+			],
+			"links":[
+				{"name":"link_enforce_1"},
+				{"name":"link_enforce_2"},
+				{"name":"link_enforce_3"},
+				{"name":"link_enforce_4"},
+				{"name":"link_enforce_5"},
+				{"name":"link_enforce_6"},
+				{"name":"link_enforce_7"},
+				{"name":"link_enforce_8"}
+			],
+			"moves":[
+				{"name":"indomitable_will"},
+				{"name":"practice_makes_perfect"},
+				{"name":"buddy_system"},
+				{"name":"bash-baller"},
+				{"name":"you_talkin_to_me"},
+				{"name":"dont_touch_them"},
+				{"name":"i_thought_i_told_you"}
+
+			],
+			"specialties":[
+				{"name":"ex-military"},
+				{"name":"athlete"},
+				{"name":"cornfed"},
+				{"name":"brawler"}
+			],
+			"stats": [
+				{
+					"name":"p-1c1s1b2",
 					"presence": -1,
-					"cool": 2,
+					"cool": 1,
 					"smarts": 1,
-					"bones": 1
+					"bones": 2
 				},
-				"2": {
+				{
+					"name":"p-1c2s-1b2",
 					"presence": -1,
 					"cool": 2,
-					"smarts": 2,
-					"bones": -1
+					"smarts": -1,
+					"bones": 2
 				},
-				"3": {
+				{
+					"name":"p0c1s0b2",
 					"presence": 0,
-					"cool": 2,
-					"smarts": 1,
-					"bones": 0
+					"cool": 1,
+					"smarts": 0,
+					"bones": 2
 				},
-				"4": {
+				{
+					"name":"p1c1s-1b2",
 					"presence": 1,
-					"cool": 2,
-					"smarts": 1,
-					"bones": -1
+					"cool": 1,
+					"smarts": -1,
+					"bones": 2
 				}
-			}
+			]
 		},
 		"guildy": {
-			"gear":[],
-			"links":[],
-			"moves":[],
-			"specialties":[],
-			"stats": {
-				"1": {
-					"presence": -1,
-					"cool": 2,
-					"smarts": 1,
+			"gear":[
+				{"name":"work_uniform", "gearcheck":1}
+			],
+			"links":[
+				{"name":"link_guildy_1"},
+				{"name":"link_guildy_2"},
+				{"name":"link_guildy_3"},
+				{"name":"link_guildy_4"},
+				{"name":"link_guildy_5"},
+				{"name":"link_guildy_6"},
+				{"name":"link_guildy_7"},
+				{"name":"link_guildy_8"}
+			],
+			"moves":[
+				{"name":"i_know_somebody"},
+				{"name":"check_the_blueprint"},
+				{"name":"work_contact"},
+				{"name":"sterling_reputation"},
+				{"name":"professional_training"},
+				{"name":"proper_leverage"},
+				{"name":"picket_line"},
+				{"name":"bargaining_power"},
+				{"name":"cross_training"},
+				{"name":"seize_the_means"},
+				{"name":"si_se_puede"}
+			],
+			"specialties":[
+				{"name":"power_in_a_union","speccheck":1},
+				{"name":"union_dues","speccheck":1},
+				{"name":"call_your_map","speccheck":1}
+			],
+			"stats": [
+				{
+					"name":"p2c1s-1b1",
+					"presence": 2,
+					"cool": 1,
+					"smarts": -1,
 					"bones": 1
 				},
-				"2": {
-					"presence": -1,
+				{
+					"name":"p2c2s-1b-1",
+					"presence": 2,
 					"cool": 2,
-					"smarts": 2,
+					"smarts": -1,
 					"bones": -1
 				},
-				"3": {
-					"presence": 0,
-					"cool": 2,
-					"smarts": 1,
+				{
+					"name":"p2c1s0b0",
+					"presence": 2,
+					"cool": 1,
+					"smarts": 0,
 					"bones": 0
 				},
-				"4": {
-					"presence": 1,
-					"cool": 2,
+				{
+					"name":"p2c1s1b-1",
+					"presence": 2,
+					"cool": 1,
 					"smarts": 1,
 					"bones": -1
 				}
-			}
+			]
 		},
 		"labcoat": {
-			"gear":[],
-			"links":[],
-			"moves":[],
-			"specialties":[],
-			"stats": {
-				"1": {
+			"gear":[
+				{"name":"lab_tool" ,"gearcheck":1}
+			],
+			"links":[
+				{"name":"link_labcoat_1"},
+				{"name":"link_labcoat_2"},
+				{"name":"link_labcoat_3"},
+				{"name":"link_labcoat_4"},
+				{"name":"link_labcoat_5"},
+				{"name":"link_labcoat_6"},
+				{"name":"link_labcoat_7"},
+				{"name":"link_labcoat_8"}
+			],
+			"moves":[
+				{"name":"think_tank"},
+				{"name":"would_you_hit_someone_with_glasses"},
+				{"name":"hold_my_glasses"},
+				{"name":"sawbones"},
+				{"name":"actually"},
+				{"name":"whats_happening"}
+			],
+			"specialties":[
+				{"name":"laboratory", "speccheck":1},
+				{"name":"education", "speccheck":1}
+			],
+			"stats": [
+				{
+					"name":"p-1c1s2b1",
 					"presence": -1,
-					"cool": 2,
-					"smarts": 1,
+					"cool": 1,
+					"smarts": 2,
 					"bones": 1
 				},
-				"2": {
+				{
+					"name":"p-1c2s2b-1",
 					"presence": -1,
 					"cool": 2,
 					"smarts": 2,
 					"bones": -1
 				},
-				"3": {
+				{
+					"name":"p0c1s2b0",
 					"presence": 0,
-					"cool": 2,
-					"smarts": 1,
+					"cool": 1,
+					"smarts": 2,
 					"bones": 0
 				},
-				"4": {
+				{
+					"name":"p1c1s2b-1",
 					"presence": 1,
-					"cool": 2,
-					"smarts": 1,
+					"cool": 1,
+					"smarts": 2,
 					"bones": -1
 				}
-			}
+			]
 		},
 		"mutant": {
 			"gear":[],
 			"links":[],
 			"moves":[],
 			"specialties":[],
-			"stats": {
-				"1": {
+			"stats": [
+				{
+					"name":"p-1c1s1b2",
 					"presence": -1,
-					"cool": 2,
+					"cool": 1,
 					"smarts": 1,
-					"bones": 1
+					"bones": 2
 				},
-				"2": {
+				{
+					"name":"p-1c-1s2b2",
 					"presence": -1,
-					"cool": 2,
+					"cool": -1,
 					"smarts": 2,
-					"bones": -1
+					"bones": 2
 				},
-				"3": {
+				{
+					"name":"p0c0s1b2",
 					"presence": 0,
-					"cool": 2,
+					"cool": 0,
 					"smarts": 1,
-					"bones": 0
+					"bones": 2
 				},
-				"4": {
+				{
+					"name":"p1c-1s1b2",
 					"presence": 1,
-					"cool": 2,
+					"cool": -1,
 					"smarts": 1,
-					"bones": -1
+					"bones": 2
 				}
-			}
+			]
 		},
 		"newmooner": {
 			"gear":[],
 			"links":[],
 			"moves":[],
 			"specialties":[],
-			"stats": {
-				"1": {
-					"presence": -1,
-					"cool": 2,
-					"smarts": 1,
-					"bones": 1
+			"stats": [
+				{
+					"name":"p1c1s-1b2",
+					"presence":1,
+					"cool":1,
+					"smarts":-1,
+					"bones":2
 				},
-				"2": {
-					"presence": -1,
-					"cool": 2,
-					"smarts": 2,
-					"bones": -1
+				{
+					"name":"p2c-1s-1b2",
+					"presence":2,
+					"cool":-1,
+					"smarts":-1,
+					"bones":2
 				},
-				"3": {
-					"presence": 0,
-					"cool": 2,
-					"smarts": 1,
-					"bones": 0
+				{
+					"name":"p1c0s0b2",
+					"presence":1,
+					"cool":0,
+					"smarts":0,
+					"bones":2
 				},
-				"4": {
-					"presence": 1,
-					"cool": 2,
-					"smarts": 1,
-					"bones": -1
+				{
+					"name":"p1c-1s1b2",
+					"presence":1,
+					"cool":-1,
+					"smarts":1,
+					"bones":2
 				}
-			}
+			]
 		},
 		"oldtimer": {
 			"gear":[],
 			"links":[],
 			"moves":[],
 			"specialties":[],
-			"stats": {
-				"1": {
-					"presence": -1,
-					"cool": 2,
-					"smarts": 1,
-					"bones": 1
+			"stats": [
+				{
+					"name":"p1c-1s2b1",
+					"presence":1,
+					"cool":-1,
+					"smarts":2,
+					"bones":1
 				},
-				"2": {
-					"presence": -1,
-					"cool": 2,
-					"smarts": 2,
-					"bones": -1
+				{
+					"name":"p2c-1s2b-1",
+					"presence":2,
+					"cool":-1,
+					"smarts":2,
+					"bones":-1
 				},
-				"3": {
-					"presence": 0,
-					"cool": 2,
-					"smarts": 1,
-					"bones": 0
+				{
+					"name":"p1c0s2b0",
+					"presence":1,
+					"cool":0,
+					"smarts":2,
+					"bones":0
 				},
-				"4": {
-					"presence": 1,
-					"cool": 2,
-					"smarts": 1,
-					"bones": -1
+				{
+					"name":"p1c1s2b-1",
+					"presence":1,
+					"cool":1,
+					"smarts":2,
+					"bones":-1
 				}
-			}
+			]
 		},
 		"pilot": {
 			"gear":[],
 			"links":[],
 			"moves":[],
 			"specialties":[],
-			"stats": {
-				"1": {
-					"presence": -1,
-					"cool": 2,
-					"smarts": 1,
-					"bones": 1
+			"stats": [
+				{
+					"name":"p1c2s0b-2",
+					"presence":1,
+					"cool":2,
+					"smarts":0,
+					"bones":-2
 				},
-				"2": {
-					"presence": -1,
-					"cool": 2,
-					"smarts": 2,
-					"bones": -1
+				{
+					"name":"p1c2s-1b-1",
+					"presence":1,
+					"cool":2,
+					"smarts":-1,
+					"bones":-1
 				},
-				"3": {
-					"presence": 0,
-					"cool": 2,
-					"smarts": 1,
-					"bones": 0
+				{
+					"name":"p1c2s-2b0",
+					"presence":1,
+					"cool":2,
+					"smarts":-2,
+					"bones":0
 				},
-				"4": {
-					"presence": 1,
-					"cool": 2,
-					"smarts": 1,
-					"bones": -1
+				{
+					"name":"p0c2s0b1",
+					"presence":0,
+					"cool":2,
+					"smarts":0,
+					"bones":1
 				}
-			}
+			]
 		},
 		"politician": {
 			"gear":[],
 			"links":[],
 			"moves":[],
 			"specialties":[],
-			"stats": {
-				"1": {
-					"presence": -1,
-					"cool": 2,
-					"smarts": 1,
-					"bones": 1
+			"stats": [
+				{
+					"name":"p2c-1s1b1",
+					"presence":2,
+					"cool":-1,
+					"smarts":1,
+					"bones":1
 				},
-				"2": {
-					"presence": -1,
-					"cool": 2,
-					"smarts": 2,
-					"bones": -1
+				{
+					"name":"p2c-1s2b-1",
+					"presence":2,
+					"cool":-1,
+					"smarts":2,
+					"bones":-1
 				},
-				"3": {
-					"presence": 0,
-					"cool": 2,
-					"smarts": 1,
-					"bones": 0
+				{
+					"name":"p2c0s1b0",
+					"presence":2,
+					"cool":0,
+					"smarts":1,
+					"bones":0
 				},
-				"4": {
-					"presence": 1,
-					"cool": 2,
-					"smarts": 1,
-					"bones": -1
+				{
+					"name":"p2c1s1b-1",
+					"presence":2,
+					"cool":1,
+					"smarts":1,
+					"bones":-1
 				}
-			}
+			
+			]
 		},
 		"rocker": {
 			"gear":[],
 			"links":[],
 			"moves":[],
 			"specialties":[],
-			"stats": {
-				"1": {
-					"presence": -1,
-					"cool": 2,
-					"smarts": 1,
-					"bones": 1
+			"stats": [
+				{
+					"name":"p2c-1s1b1",
+					"presence":2,
+					"cool":-1,
+					"smarts":1,
+					"bones":1
 				},
-				"2": {
-					"presence": -1,
-					"cool": 2,
-					"smarts": 2,
-					"bones": -1
+				{
+					"name":"p2c-1s-1b2",
+					"presence":2,
+					"cool":-1,
+					"smarts":-1,
+					"bones":2
 				},
-				"3": {
-					"presence": 0,
-					"cool": 2,
-					"smarts": 1,
-					"bones": 0
+				{
+					"name":"p2c0s0b1",
+					"presence":2,
+					"cool":0,
+					"smarts":0,
+					"bones":1
 				},
-				"4": {
-					"presence": 1,
-					"cool": 2,
-					"smarts": 1,
-					"bones": -1
+				{
+					"name":"p2c1s-1b1",
+					"presence":2,
+					"cool":1,
+					"smarts":-1,
+					"bones":1
 				}
-			}
+			]
 		},
 		"techie": {
 			"gear":[],
 			"links":[],
 			"moves":[],
 			"specialties":[],
-			"stats": {
-				"1": {
-					"presence": -1,
-					"cool": 2,
-					"smarts": 1,
-					"bones": 1
+			"stats": [
+				{
+					"name":"p-1c1s2b1",
+					"presence":-1,
+					"cool":1,
+					"smarts":2,
+					"bones":1
 				},
-				"2": {
-					"presence": -1,
-					"cool": 2,
-					"smarts": 2,
-					"bones": -1
+				{
+					"name":"p-1c-1s2b2",
+					"presence":-1,
+					"cool":-1,
+					"smarts":2,
+					"bones":2
 				},
-				"3": {
-					"presence": 0,
-					"cool": 2,
-					"smarts": 1,
-					"bones": 0
+				{
+					"name":"p0c0s2b1",
+					"presence":0,
+					"cool":0,
+					"smarts":2,
+					"bones":1
 				},
-				"4": {
-					"presence": 1,
-					"cool": 2,
-					"smarts": 1,
-					"bones": -1
+				{
+					"name":"p1c-1s2b1",
+					"presence":1,
+					"cool":-1,
+					"smarts":2,
+					"bones":1
 				}
-			}
+			]
 		},
 		"vendor": {
 			"gear":[],
 			"links":[],
 			"moves":[],
 			"specialties":[],
-			"stats": {
-				"1": {
-					"presence": -1,
-					"cool": 2,
-					"smarts": 1,
-					"bones": 1
+			"stats": [
+				{
+					"name":"p1c2s1b-1",
+					"presence":1,
+					"cool":2,
+					"smarts":1,
+					"bones":-1
 				},
-				"2": {
-					"presence": -1,
-					"cool": 2,
-					"smarts": 2,
-					"bones": -1
+				{
+					"name":"p2c2s-1b-1",
+					"presence":2,
+					"cool":2,
+					"smarts":-1,
+					"bones":-1
 				},
-				"3": {
-					"presence": 0,
-					"cool": 2,
-					"smarts": 1,
-					"bones": 0
+				{
+					"name":"p1c2s0b0",
+					"presence":1,
+					"cool":2,
+					"smarts":0,
+					"bones":0
 				},
-				"4": {
-					"presence": 1,
-					"cool": 2,
-					"smarts": 1,
-					"bones": -1
+				{
+					"name":"p1c2s-1b1",
+					"presence":1,
+					"cool":2,
+					"smarts":-1,
+					"bones":1
 				}
-			}
+			]
 		}
 	}
 }

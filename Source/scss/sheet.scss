@@ -234,7 +234,10 @@ $fontblack: #333;
 		width:100%;
 		text-align: center;
 		margin:0;
-		font-size:12px;
+		font-size:12px !important;
+		border:0;
+		padding-top: 0 !important;
+		padding-bottom: 0 !important;
 	}
 
 
@@ -274,7 +277,7 @@ $fontblack: #333;
 		position: absolute;
 		border:0;
 		height:70px;
-		font-size: 18px;
+		font-size: 16px;
 		z-index: -1;
 		top:10px;
 		left:2px;

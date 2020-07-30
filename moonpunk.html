@@ -1,4 +1,6 @@
-<div class="sheet-wrapper"><div class="flex"><!--Top info--><div class="col100 flex-wrap"><label class="col47"><input type="text" spellcheck="false" name="attr_character_name"/><div class="label text title" data-i18n="name"></div></label><label class="col24b"><input type="text" spellcheck="false" name="attr_pronouns"/><div class="label text title" data-i18n="pronouns"></div></label><div class="playbook-selector"><select name="attr_playbook"><optgroup><option>Select a Playbook</option><option value="duster">Duster</option><option value="enforcer">Enforcer</option><option value="guildy">Guildy</option><option value="labcoat">Labcoat</option><option value="mutant">Mutant</option><option value="newmooner">New Mooner</option><option value="oldtimer">Old Timer</option><option value="pilot">Pilot</option><option value="politician">Politician</option><option value="rocker">Rocker</option><option value="techie">Techie</option><option value="vendor">Vendor</option></optgroup></select></div><label class="col100"><input type="text" spellcheck="false" name="attr_ethos"/><div class="label text title" data-i18n="ethos"></div></label><!--Left Column--><div class="col15"><input class="statcheck" type="hidden" name="attr_chosestats"/><div class="stats"><label class="col100 stats"><input type="number" name="attr_presence"/><button class="statbutton" type="roll" name="roll_presence" value="&{template:default} {{name=Presence}} {{charname=@{character_name} rolled plus Presence}} {{Roll=[[2d6+@{presence}+?{+/- tag?|0}]]}}" data-i18n="presence"></button><div class="moves" data-i18n="tanstaafl"></div><div class="moves" data-i18n="influencesomeone"></div></label><label class="col100 stats"><input type="number" name="attr_cool"/><button class="statbutton" type="roll" name="roll_cool" value="&{template:default} {{name=Cool}} {{charname=@{character_name} rolled plus Cool}} {{Roll=[[2d6+@{cool}+?{+/- tag?|0}]]}}" data-i18n="cool"></button><div class="moves" data-i18n="thinkfast"></div><div class="moves" data-i18n="actcasual"></div></label><label class="col100 stats"><input type="number" name="attr_smarts"/><button class="statbutton" type="roll" name="roll_smarts" value="&{template:default} {{name=Smarts}} {{charname=@{character_name} rolled plus Smarts}} {{Roll=[[2d6+@{smarts}+?{+/- tag?|0}]]}}" data-i18n="smarts"></button><div class="moves" data-i18n="usetech"></div><div class="moves" data-i18n="readroom"></div></label><label class="col100 stats"><input type="number" name="attr_bones"/><button class="statbutton" type="roll" name="roll_bones" value="&{template:default} {{name=Bones}} {{charname=@{character_name} rolled plus Bones}} {{Roll=[[2d6+@{bones}+?{+/- tag?|0}]]}}" data-i18n="bones"></button><div class="moves" data-i18n="throwdown"></div><div class="moves" data-i18n="protectsomeone"></div></label><label class="col100 stats"><button class="statresetbutton" type="action" name="act_resetstats" data-i18n="resetstats"></button></label></div><div class="stat-selector"><div class="label text" data-i18n="statdirections"></div><fieldset class="repeating_stats"><button type="action" name="act_stats"><textarea spellcheck="false" name="attr_name"></textarea></button><input type="hidden" name="attr_presence"/><input type="hidden" name="attr_cool"/><input type="hidden" name="attr_smarts"/><input type="hidden" name="attr_bones"/></fieldset></div></div><!--Center Column - Tanstaafl & XP--><div class="col45"><div class="tanstaafl flex-wrap"><div class="col100 section-head text" data-i18n="tanstaafl"></div><div class="col50 oweLabel" data-i18n="owe"></div><div class="col50 owedLabel" data-i18n="owed"></div><div class="col50 owe"><fieldset class="repeating_owe"><input type="text" spellcheck="false" name="attr_owe" data-i18n-placeholder="owe_placeholder"/></fieldset></div><div class="col50 owed"><fieldset class="repeating_owed" data-i18n-placeholder="owed_placeholder"><input type="text" spellcheck="false" name="attr_owed"/></fieldset></div></div><div class="col100 exp flex-wrap"><div class="col100 section-head text" data-i18n="exp"></div><div class="col100 flex-wrap"><div class="xpboxcontainer tanstbox"><input class="xpbox" type="checkbox" name="attr_xp1" value="1"/><span class="xpbox"></span></div><div class="xpboxcontainer tanstbox"><input class="xpbox" type="checkbox" name="attr_xp2" value="1"/><span class="xpbox"></span></div><div class="xpboxcontainer"><input class="xpbox" type="checkbox" name="attr_xp3" value="1"/><span class="xpbox"></span></div><div class="xpboxcontainer"><input class="xpbox" type="checkbox" name="attr_xp4" value="1"/><span class="xpbox"></span></div><div class="xpboxcontainer"><input class="xpbox" type="checkbox" name="attr_xp5" value="1"/><span class="xpbox"></span></div><div class="xpboxcontainer"><input class="xpbox" type="checkbox" name="attr_xp6" value="1"/><span class="xpbox"></span></div><div class="xpboxcontainer"><input class="xpbox" type="checkbox" name="attr_xp7" value="1"/><span class="xpbox"></span></div></div></div><div class="col100 notes"><div class="col100 section-head text" data-i18n="movesnotes"></div><textarea spellcheck="false" name="attr_notes"></textarea></div></div><!--Right Column - Harm & Gear--><div class="col40"><div class="harm flex-wrap"><div class="col100 section-head text" data-i18n="harm"></div><div class="col24b harmlabel text" data-i18n="minor"></div><div class="col24b harmboxcontainer"><div class="harmboxsubcontainer"><input class="harmbox" type="checkbox" name="attr_minor1" value="1"/><span class="harmbox"></span></div><div class="harmboxsubcontainer"><input class="harmbox" type="checkbox" name="attr_minor2" value="1"/><span class="harmbox"></span></div></div><div class="col50 harmtags"><div class="taglabel" data-i18n="tags"></div><textarea spellcheck="false" name="attr_minortags"></textarea></div><div class="col24b harmlabel text" data-i18n="moderate"></div><div class="col24b harmboxcontainer"><div class="harmboxsubcontainer"><input class="harmbox" type="checkbox" name="attr_moderate1" value="1"/><span class="harmbox"></span></div><div class="harmboxsubcontainer"><input class="harmbox" type="checkbox" name="attr_moderate2" value="1"/><span class="harmbox"></span></div></div><div class="col50 harmtags"><div class="taglabel smalltaglabel" data-i18n="temporary"></div><textarea spellcheck="false" name="attr_temporarytags"></textarea></div><div class="col24b harmlabel text" data-i18n="major"></div><div class="col24b harmboxcontainer"><div class="harmboxsubcontainer"><input class="harmbox" type="checkbox" name="attr_major1" value="1"/><span class="harmbox"></span></div><div class="harmboxsubcontainer"><input class="harmbox" type="checkbox" name="attr_major2" value="1"/><span class="harmbox"></span></div></div><div class="col50 harmtags"><div class="taglabel smalltaglabel" data-i18n="needsattention"></div><textarea spellcheck="false" name="attr_needattentiontags"></textarea></div><div class="col24b harmlabel text" data-i18n="dying"></div><div class="col24b harmboxcontainer"><div class="harmboxsubcontainer"><input class="harmbox" type="checkbox" name="attr_dying1" value="1"/><span class="harmbox"></span></div></div><div class="col50 harmtags"><div class="taglabel smalltaglabel" data-i18n="permanent"></div><textarea spellcheck="false" name="attr_permanentags"></textarea></div></div><div class="col100"><div class="section-head text" data-i18n="gear"></div><div class="gearsection"><fieldset class="repeating_gear"><input class="gearcheck" type="checkbox" name="attr_gearcheck" value="1"/><span class="gearcheck"></span><input type="text" spellcheck="false" name="attr_name" data-i18n-placeholder="gear_name"/></fieldset></div></div></div><!--Next Section--><div class="col100 bottomsection flex-wrap"><div class="col33 flex-wrap"><!--Playbook Moves--><div class="col50"><div class="bottomsection-head text" data-i18n="playbookmoves"></div></div><div class="col50"><div class="bottomsection-desc text" data-i18n="playbookmovesdesc"></div></div><div class="col100"><div class="playbookmoves"><fieldset class="repeating_moves"><input class="btmcheck" type="checkbox" name="attr_movecheck" value="1"/><span class="btmcheck"></span><input type="text" spellcheck="false" name="attr_name" data-i18n-placeholder="moves_name"/><textarea spellcheck="false" name="attr_description" data-i18n-placeholder="moves_description"></textarea></fieldset></div></div></div><div class="col33 flex-wrap"><!--Specialty Moves--><div class="col50"><div class="bottomsection-head text" data-i18n="specialty"></div></div><div class="col50"><div class="bottomsection-desc text" data-i18n="specialtydesc"></div></div><div class="col100"><div class="playbookmoves"><fieldset class="repeating_specialties"><input class="btmcheck" type="checkbox" name="attr_speccheck" value="1"/><span class="btmcheck"></span><input type="text" spellcheck="false" name="attr_name" data-i18n-placeholder="moves_name"/><textarea spellcheck="false" name="attr_description" data-i18n-placeholder="moves_description"></textarea></fieldset></div></div><!--Leveling Up--><div class="col50"><div class="bottomsection-head text" data-i18n="levelingup"></div></div><div class="col50"><div class="bottomsection-desc text" data-i18n="levelingupdesc"></div></div><div class="col100"><div class="levelingup"><fieldset class="repeating_leveling"><input class="btmcheck" type="checkbox" name="attr_levelupcheck" value="1"/><span class="btmcheck"></span><input type="text" spellcheck="false" name="attr_name"/></fieldset></div></div></div><div class="col33 flex-wrap"><!--Links--><div class="col50"><div class="bottomsection-head text" data-i18n="links"></div></div><div class="col50"><div class="bottomsection-desc text" data-i18n="linksdesc"></div></div><div class="col100"><div class="linksection"><fieldset class="repeating_links"><input type="text" spellcheck="false" name="attr_linkcharacter" data-i18n-placeholder="player"/><textarea spellcheck="false" name="attr_name" data-i18n-placeholder="links_name"></textarea></fieldset></div></div></div></div></div></div></div>
+<div class="sheet-wrapper"><div class="flex"><!--Top info--><div class="col100 flex-wrap"><label class="col47"><input type="text" spellcheck="false" name="attr_character_name"/><div class="label text title" data-i18n="name"></div></label><label class="col24b"><input type="text" spellcheck="false" name="attr_pronouns"/><div class="label text title" data-i18n="pronouns"></div></label><div class="playbook-selector"><select name="attr_playbook"><optgroup><option>Select a Playbook</option><option value="duster">Duster</option><option value="enforcer">Enforcer</option><option value="guildy">Guildy</option><option value="labcoat">Labcoat</option><option value="mutant">Mutant</option><option value="newmooner">New Mooner</option><option value="oldtimer">Old Timer</option><option value="pilot">Pilot</option><option value="politician">Politician</option><option value="rocker">Rocker</option><option value="techie">Techie</option><option value="vendor">Vendor</option></optgroup></select></div><label class="col100"><input type="text" spellcheck="false" name="attr_ethos"/><div class="label text title" data-i18n="ethos"></div></label><!--Left Column--><div class="col15"><input class="statcheck" type="hidden" name="attr_chosestats"/><div class="stats"><label class="col100 stats"><input type="number" name="attr_presence"/><button class="statbutton" type="roll" name="roll_presence" value="&{template:mp} {{name=@{character_name}}} {{roll_name=Presence}} {{stat_name=Presence}} {{result=[[2d6+@{presence}+?{roll_mod|0}]]}}" data-i18n="presence"></button><button class="moves" type="roll" name="roll_tanstaafl" value="&{template:mp} {{name=@{character_name}}} {{roll_name=TANSTAAFL}} {{stat_name=Presence}} {{result=[[2d6+@{presence}+?{roll_mod|0}]]}}" data-i18n="tanstaafl"></button><button class="moves" type="roll" name="roll_influencesomeone" value="&{template:mp} {{name=@{character_name}}} {{roll_name=Influence Someone}} {{stat_name=Presence}} {{result=[[2d6+@{presence}+?{roll_mod|0}]]}}" data-i18n="influencesomeone"></button></label><label class="col100 stats"><input type="number" name="attr_cool"/><button class="statbutton" type="roll" name="roll_cool" value="&{template:mp} {{name=@{character_name}}} {{roll_name=Cool}} {{stat_name=Cool}} {{result=[[2d6+@{cool}+?{roll_mod|0}]]}}" data-i18n="cool"></button><button class="moves" type="roll" name="roll_thinkfast" value="&{template:mp} {{name=@{character_name}}} {{roll_name=Think Fast}} {{stat_name=Cool}} {{result=[[2d6+@{cool}+?{roll_mod|0}]]}}" data-i18n="thinkfast"></button><button class="moves" type="roll" name="roll_actcasual" value="&{template:mp} {{name=@{character_name}}} {{roll_name=Act Casual}} {{stat_name=Cool}} {{result=[[2d6+@{cool}+?{roll_mod|0}]]}}" data-i18n="actcasual"></button></label><label class="col100 stats"><input type="number" name="attr_smarts"/><button class="statbutton" type="roll" name="roll_smarts" value="&{template:mp} {{name=@{character_name}}} {{roll_name=Smarts}} {{stat_name=Smarts}} {{result=[[2d6+@{smarts}+?{roll_mod|0}]]}}" data-i18n="smarts"></button><button class="moves" type="roll" name="roll_usetech" value="&{template:mp} {{name=@{character_name}}} {{roll_name=Use Tech}} {{stat_name=Smarts}} {{result=[[2d6+@{smarts}+?{roll_mod|0}]]}}" data-i18n="usetech"></button><button class="moves" type="roll" name="roll_readroom" value="&{template:mp} {{name=@{character_name}}} {{roll_name=Read The Room}} {{stat_name=Smarts}} {{result=[[2d6+@{smarts}+?{roll_mod|0}]]}}" data-i18n="readroom"></button></label><label class="col100 stats"><input type="number" name="attr_bones"/><button class="statbutton" type="roll" name="roll_bones" value="&{template:mp} {{name=@{character_name}}} {{roll_name=Bones}} {{stat_name=Bones}} {{result=[[2d6+@{bones}+?{roll_mod|0}]]}}" data-i18n="bones"></button><button class="moves" type="roll" name="roll_throwdown" value="&{template:mp} {{name=@{character_name}}} {{roll_name=Throw Down}} {{stat_name=Bones}} {{result=[[2d6+@{bones}+?{roll_mod|0}]]}}" data-i18n="throwdown"></button><button class="moves" type="roll" name="roll_protectsomeone" value="&{template:mp} {{name=@{character_name}}} {{roll_name=Protect Someone}} {{stat_name=Bones}} {{result=[[2d6+@{bones}+?{roll_mod|0}]]}}" data-i18n="protectsomeone"></button></label><label class="col100 stats"><button class="statresetbutton" type="action" name="act_resetstats" data-i18n="resetstats"></button></label></div><div class="stat-selector"><div class="label text" data-i18n="statdirections"></div><fieldset class="repeating_stats"><button type="action" name="act_stats"><textarea spellcheck="false" name="attr_name"></textarea></button><input type="hidden" name="attr_presence"/><input type="hidden" name="attr_cool"/><input type="hidden" name="attr_smarts"/><input type="hidden" name="attr_bones"/></fieldset></div></div><!--Center Column - Tanstaafl & XP--><div class="col45"><div class="tanstaafl flex-wrap"><div class="col100 section-head text" data-i18n="tanstaafl"></div><div class="col50 oweLabel" data-i18n="owe"></div><div class="col50 owedLabel" data-i18n="owed"></div><div class="col50 owe"><fieldset class="repeating_owe"><input type="text" spellcheck="false" name="attr_owe" data-i18n-placeholder="owe_placeholder"/></fieldset></div><div class="col50 owed"><fieldset class="repeating_owed" data-i18n-placeholder="owed_placeholder"><input type="text" spellcheck="false" name="attr_owed"/></fieldset></div></div><div class="col100 exp flex-wrap"><div class="col100 section-head text" data-i18n="exp"></div><div class="col100 flex-wrap"><div class="xpboxcontainer tanstbox"><input class="xpbox" type="checkbox" name="attr_xp1" value="1"/><span class="xpbox"></span></div><div class="xpboxcontainer tanstbox"><input class="xpbox" type="checkbox" name="attr_xp2" value="1"/><span class="xpbox"></span></div><div class="xpboxcontainer"><input class="xpbox" type="checkbox" name="attr_xp3" value="1"/><span class="xpbox"></span></div><div class="xpboxcontainer"><input class="xpbox" type="checkbox" name="attr_xp4" value="1"/><span class="xpbox"></span></div><div class="xpboxcontainer"><input class="xpbox" type="checkbox" name="attr_xp5" value="1"/><span class="xpbox"></span></div><div class="xpboxcontainer"><input class="xpbox" type="checkbox" name="attr_xp6" value="1"/><span class="xpbox"></span></div><div class="xpboxcontainer"><input class="xpbox" type="checkbox" name="attr_xp7" value="1"/><span class="xpbox"></span></div></div></div><div class="col100 notes"><div class="col100 section-head text" data-i18n="movesnotes"></div><textarea spellcheck="false" name="attr_notes"></textarea></div></div><!--Right Column - Harm & Gear--><div class="col40"><div class="harm flex-wrap"><div class="col100 section-head text" data-i18n="harm"></div><div class="col24b harmlabel text" data-i18n="minor"></div><div class="col24b harmboxcontainer"><div class="harmboxsubcontainer"><input class="harmbox" type="checkbox" name="attr_minor1" value="1"/><span class="harmbox"></span></div><div class="harmboxsubcontainer"><input class="harmbox" type="checkbox" name="attr_minor2" value="1"/><span class="harmbox"></span></div></div><div class="col50 harmtags"><div class="taglabel" data-i18n="tags"></div><textarea spellcheck="false" name="attr_minortags"></textarea></div><div class="col24b harmlabel text" data-i18n="moderate"></div><div class="col24b harmboxcontainer"><div class="harmboxsubcontainer"><input class="harmbox" type="checkbox" name="attr_moderate1" value="1"/><span class="harmbox"></span></div><div class="harmboxsubcontainer"><input class="harmbox" type="checkbox" name="attr_moderate2" value="1"/><span class="harmbox"></span></div></div><div class="col50 harmtags"><div class="taglabel smalltaglabel" data-i18n="temporary"></div><textarea spellcheck="false" name="attr_temporarytags"></textarea></div><div class="col24b harmlabel text" data-i18n="major"></div><div class="col24b harmboxcontainer"><div class="harmboxsubcontainer"><input class="harmbox" type="checkbox" name="attr_major1" value="1"/><span class="harmbox"></span></div><div class="harmboxsubcontainer"><input class="harmbox" type="checkbox" name="attr_major2" value="1"/><span class="harmbox"></span></div></div><div class="col50 harmtags"><div class="taglabel smalltaglabel" data-i18n="needsattention"></div><textarea spellcheck="false" name="attr_needattentiontags"></textarea></div><div class="col24b harmlabel text" data-i18n="dying"></div><div class="col24b harmboxcontainer"><div class="harmboxsubcontainer"><input class="harmbox" type="checkbox" name="attr_dying1" value="1"/><span class="harmbox"></span></div></div><div class="col50 harmtags"><div class="taglabel smalltaglabel" data-i18n="permanent"></div><textarea spellcheck="false" name="attr_permanentags"></textarea></div></div><div class="col100"><div class="section-head text" data-i18n="gear"></div><div class="gearsection"><fieldset class="repeating_gear"><input class="gearcheck" type="checkbox" name="attr_gearcheck" value="1"/><span class="gearcheck"></span><input type="text" spellcheck="false" name="attr_name" data-i18n-placeholder="gear_name"/></fieldset></div></div></div><!--Next Section--><div class="col100 bottomsection flex-wrap"><div class="col33 flex-wrap"><!--Playbook Moves--><div class="col50"><div class="bottomsection-head text" data-i18n="playbookmoves"></div></div><div class="col50"><div class="bottomsection-desc text" data-i18n="playbookmovesdesc"></div></div><div class="col100"><div class="playbookmoves"><fieldset class="repeating_moves"><input class="btmcheck" type="checkbox" name="attr_movecheck" value="1"/><span class="btmcheck"></span><input type="text" spellcheck="false" name="attr_name" data-i18n-placeholder="moves_name"/><textarea spellcheck="false" name="attr_description" data-i18n-placeholder="moves_description"></textarea></fieldset></div></div></div><div class="col33 flex-wrap"><!--Specialty Moves--><div class="col50"><div class="bottomsection-head text" data-i18n="specialty"></div></div><div class="col50"><div class="bottomsection-desc text" data-i18n="specialtydesc"></div></div><div class="col100"><div class="playbookmoves"><fieldset class="repeating_specialties"><input class="btmcheck" type="checkbox" name="attr_speccheck" value="1"/><span class="btmcheck"></span><input type="text" spellcheck="false" name="attr_name" data-i18n-placeholder="moves_name"/><textarea spellcheck="false" name="attr_description" data-i18n-placeholder="moves_description"></textarea></fieldset></div></div><!--Leveling Up--><div class="col50"><div class="bottomsection-head text" data-i18n="levelingup"></div></div><div class="col50"><div class="bottomsection-desc text" data-i18n="levelingupdesc"></div></div><div class="col100"><div class="levelingup"><fieldset class="repeating_leveling"><input class="btmcheck" type="checkbox" name="attr_levelupcheck" value="1"/><span class="btmcheck"></span><input type="text" spellcheck="false" name="attr_name"/></fieldset></div></div></div><div class="col33 flex-wrap"><!--Links--><div class="col50"><div class="bottomsection-head text" data-i18n="links"></div></div><div class="col50"><div class="bottomsection-desc text" data-i18n="linksdesc"></div></div><div class="col100"><div class="linksection"><fieldset class="repeating_links"><input type="text" spellcheck="false" name="attr_linkcharacter" data-i18n-placeholder="player"/><textarea spellcheck="false" name="attr_name" data-i18n-placeholder="links_name"></textarea></fieldset></div></div></div></div></div></div></div><!--Mail Roll Template--><!--roll_name is the name of the thing being roll--><!--name is the name of the character doing the rolling--><!--stat_name is the name of the stat added to the roll--><!--result is the die roll--><rolltemplate class="sheet-rolltemplate-mp"><table><tr><th colspan="2">{{roll_name}}</th></tr><tr> <td colspan="2">{{name}} rolled {{#stat_name}} {{stat_name}}{{/stat_name}}{{#roll_mod}}({{roll_mod}}){{/roll_mod}}</td></tr><tr>{{#rollGreater() result 9}}<td class="result success">{{result}}</td><td>Success!</td>{{/rollGreater() result 9}}
+{{#rollBetween() result 7 9}}<td class="result">{{result}}</td><td>Partial Success</td>{{/rollBetween() result 7 9}}
+{{#rollLess() result 7}}<td class="result failure">{{result}}</td><td>Miss</td>{{/rollLess() result 7}}</tr></table></rolltemplate>
 <script type="text/worker">
 "use strict";
 const data = {
@@ -24,8 +26,8 @@ const data = {
 	"playbooks": {
 		"duster": {
 			"gear": [
-				{"name":"p:suit"},
-				{"name":"safety_tether"}
+				{"name":"p:suit", "gearcheck":1},
+				{"name":"safety_tether", "gearcheck":1}
 			],
 			"links": [
 				{"name":"link_dust_1"},
@@ -49,12 +51,12 @@ const data = {
 				{"name":"tell_me_i_cant"}
 			],
 			"specialties": [
-				{"name":"under_pressure"}
+				{"name":"under_pressure", "speccheck":1}
 			],
 			"stats": [
 				
 				{
-					"name":" Presence:-1&#13;&#10;Cool:2&#13;&#10;Smarts:1&#13;&#10;Bones:1",
+					"name":"p-1c2s1b1",
 					"presence": -1,
 					"cool": 2,
 					"smarts": 1,
@@ -62,7 +64,7 @@ const data = {
 					"index":0
 				},
 				{
-					"name":" Presence:-1\n Cool:2\n Smarts:2\n Bones:-1",
+					"name":"p-1c2s2b-1",
 					"presence": -1,
 					"cool": 2,
 					"smarts": 2,
@@ -70,7 +72,7 @@ const data = {
 					"index":1
 				},
 				{
-					"name":" Presence:0\n Cool:2\n Smarts:1\n Bones:0",
+					"name":"p0c2s1b0",
 					"presence": 0,
 					"cool": 2,
 					"smarts": 1,
@@ -78,7 +80,7 @@ const data = {
 					"index":2
 				},
 				{
-					"name":" Presence:1\n Cool:2\n Smarts:1\n Bones:-1",
+					"name":"p1c2s1b-1",
 					"presence": 1,
 					"cool": 2,
 					"smarts": 1,
@@ -88,356 +90,474 @@ const data = {
 			]
 		},
 		"enforcer": {
-			"gear":[],
-			"links":[],
-			"moves":[],
-			"specialties":[],
-			"stats": {
-				"1": {
+			"gear":[
+				{"name":"cool_outfit", "gearcheck":1},
+				{"name":"brass_knuckles", "gearcheck":1}
+			],
+			"links":[
+				{"name":"link_enforce_1"},
+				{"name":"link_enforce_2"},
+				{"name":"link_enforce_3"},
+				{"name":"link_enforce_4"},
+				{"name":"link_enforce_5"},
+				{"name":"link_enforce_6"},
+				{"name":"link_enforce_7"},
+				{"name":"link_enforce_8"}
+			],
+			"moves":[
+				{"name":"indomitable_will"},
+				{"name":"practice_makes_perfect"},
+				{"name":"buddy_system"},
+				{"name":"bash-baller"},
+				{"name":"you_talkin_to_me"},
+				{"name":"dont_touch_them"},
+				{"name":"i_thought_i_told_you"}
+			],
+			"specialties":[
+				{"name":"ex-military"},
+				{"name":"athlete"},
+				{"name":"cornfed"},
+				{"name":"brawler"}
+			],
+			"stats": [
+				{
+					"name":"p-1c1s1b2",
 					"presence": -1,
-					"cool": 2,
+					"cool": 1,
 					"smarts": 1,
-					"bones": 1
+					"bones": 2
 				},
-				"2": {
+				{
+					"name":"p-1c2s-1b2",
 					"presence": -1,
 					"cool": 2,
-					"smarts": 2,
-					"bones": -1
+					"smarts": -1,
+					"bones": 2
 				},
-				"3": {
+				{
+					"name":"p0c1s0b2",
 					"presence": 0,
-					"cool": 2,
-					"smarts": 1,
-					"bones": 0
+					"cool": 1,
+					"smarts": 0,
+					"bones": 2
 				},
-				"4": {
+				{
+					"name":"p1c1s-1b2",
 					"presence": 1,
-					"cool": 2,
-					"smarts": 1,
-					"bones": -1
+					"cool": 1,
+					"smarts": -1,
+					"bones": 2
 				}
-			}
+			]
 		},
 		"guildy": {
-			"gear":[],
-			"links":[],
-			"moves":[],
-			"specialties":[],
-			"stats": {
-				"1": {
-					"presence": -1,
-					"cool": 2,
-					"smarts": 1,
+			"gear":[
+				{"name":"work_uniform", "gearcheck":1}
+			],
+			"links":[
+				{"name":"link_guildy_1"},
+				{"name":"link_guildy_2"},
+				{"name":"link_guildy_3"},
+				{"name":"link_guildy_4"},
+				{"name":"link_guildy_5"},
+				{"name":"link_guildy_6"},
+				{"name":"link_guildy_7"},
+				{"name":"link_guildy_8"}
+			],
+			"moves":[
+				{"name":"i_know_somebody"},
+				{"name":"check_the_blueprint"},
+				{"name":"work_contact"},
+				{"name":"sterling_reputation"},
+				{"name":"professional_training"},
+				{"name":"proper_leverage"},
+				{"name":"picket_line"},
+				{"name":"bargaining_power"},
+				{"name":"cross_training"},
+				{"name":"seize_the_means"},
+				{"name":"si_se_puede"}
+			],
+			"specialties":[
+				{"name":"power_in_a_union","speccheck":1},
+				{"name":"union_dues","speccheck":1},
+				{"name":"call_your_map","speccheck":1}
+			],
+			"stats": [
+				{
+					"name":"p2c1s-1b1",
+					"presence": 2,
+					"cool": 1,
+					"smarts": -1,
 					"bones": 1
 				},
-				"2": {
-					"presence": -1,
+				{
+					"name":"p2c2s-1b-1",
+					"presence": 2,
 					"cool": 2,
-					"smarts": 2,
+					"smarts": -1,
 					"bones": -1
 				},
-				"3": {
-					"presence": 0,
-					"cool": 2,
-					"smarts": 1,
+				{
+					"name":"p2c1s0b0",
+					"presence": 2,
+					"cool": 1,
+					"smarts": 0,
 					"bones": 0
 				},
-				"4": {
-					"presence": 1,
-					"cool": 2,
+				{
+					"name":"p2c1s1b-1",
+					"presence": 2,
+					"cool": 1,
 					"smarts": 1,
 					"bones": -1
 				}
-			}
+			]
 		},
 		"labcoat": {
-			"gear":[],
-			"links":[],
-			"moves":[],
-			"specialties":[],
-			"stats": {
-				"1": {
+			"gear":[
+				{"name":"lab_tool" ,"gearcheck":1}
+			],
+			"links":[
+				{"name":"link_labcoat_1"},
+				{"name":"link_labcoat_2"},
+				{"name":"link_labcoat_3"},
+				{"name":"link_labcoat_4"},
+				{"name":"link_labcoat_5"},
+				{"name":"link_labcoat_6"},
+				{"name":"link_labcoat_7"},
+				{"name":"link_labcoat_8"}
+			],
+			"moves":[
+				{"name":"think_tank"},
+				{"name":"would_you_hit_someone_with_glasses"},
+				{"name":"hold_my_glasses"},
+				{"name":"sawbones"},
+				{"name":"actually"},
+				{"name":"whats_happening"}
+			],
+			"specialties":[
+				{"name":"laboratory", "speccheck":1},
+				{"name":"education", "speccheck":1}
+			],
+			"stats": [
+				{
+					"name":"p-1c1s2b1",
 					"presence": -1,
-					"cool": 2,
-					"smarts": 1,
+					"cool": 1,
+					"smarts": 2,
 					"bones": 1
 				},
-				"2": {
+				{
+					"name":"p-1c2s2b-1",
 					"presence": -1,
 					"cool": 2,
 					"smarts": 2,
 					"bones": -1
 				},
-				"3": {
+				{
+					"name":"p0c1s2b0",
 					"presence": 0,
-					"cool": 2,
-					"smarts": 1,
+					"cool": 1,
+					"smarts": 2,
 					"bones": 0
 				},
-				"4": {
+				{
+					"name":"p1c1s2b-1",
 					"presence": 1,
-					"cool": 2,
-					"smarts": 1,
+					"cool": 1,
+					"smarts": 2,
 					"bones": -1
 				}
-			}
+			]
 		},
 		"mutant": {
 			"gear":[],
 			"links":[],
 			"moves":[],
 			"specialties":[],
-			"stats": {
-				"1": {
+			"stats": [
+				{
+					"name":"p-1c1s1b2",
 					"presence": -1,
-					"cool": 2,
+					"cool": 1,
 					"smarts": 1,
-					"bones": 1
+					"bones": 2
 				},
-				"2": {
+				{
+					"name":"p-1c-1s2b2",
 					"presence": -1,
-					"cool": 2,
+					"cool": -1,
 					"smarts": 2,
-					"bones": -1
+					"bones": 2
 				},
-				"3": {
+				{
+					"name":"p0c0s1b2",
 					"presence": 0,
-					"cool": 2,
+					"cool": 0,
 					"smarts": 1,
-					"bones": 0
+					"bones": 2
 				},
-				"4": {
+				{
+					"name":"p1c-1s1b2",
 					"presence": 1,
-					"cool": 2,
+					"cool": -1,
 					"smarts": 1,
-					"bones": -1
+					"bones": 2
 				}
-			}
+			]
 		},
 		"newmooner": {
 			"gear":[],
 			"links":[],
 			"moves":[],
 			"specialties":[],
-			"stats": {
-				"1": {
-					"presence": -1,
-					"cool": 2,
-					"smarts": 1,
-					"bones": 1
+			"stats": [
+				{
+					"name":"p1c1s-1b2",
+					"presence":1,
+					"cool":1,
+					"smarts":-1,
+					"bones":2
 				},
-				"2": {
-					"presence": -1,
-					"cool": 2,
-					"smarts": 2,
-					"bones": -1
+				{
+					"name":"p2c-1s-1b2",
+					"presence":2,
+					"cool":-1,
+					"smarts":-1,
+					"bones":2
 				},
-				"3": {
-					"presence": 0,
-					"cool": 2,
-					"smarts": 1,
-					"bones": 0
+				{
+					"name":"p1c0s0b2",
+					"presence":1,
+					"cool":0,
+					"smarts":0,
+					"bones":2
 				},
-				"4": {
-					"presence": 1,
-					"cool": 2,
-					"smarts": 1,
-					"bones": -1
+				{
+					"name":"p1c-1s1b2",
+					"presence":1,
+					"cool":-1,
+					"smarts":1,
+					"bones":2
 				}
-			}
+			]
 		},
 		"oldtimer": {
 			"gear":[],
 			"links":[],
 			"moves":[],
 			"specialties":[],
-			"stats": {
-				"1": {
-					"presence": -1,
-					"cool": 2,
-					"smarts": 1,
-					"bones": 1
+			"stats": [
+				{
+					"name":"p1c-1s2b1",
+					"presence":1,
+					"cool":-1,
+					"smarts":2,
+					"bones":1
 				},
-				"2": {
-					"presence": -1,
-					"cool": 2,
-					"smarts": 2,
-					"bones": -1
+				{
+					"name":"p2c-1s2b-1",
+					"presence":2,
+					"cool":-1,
+					"smarts":2,
+					"bones":-1
 				},
-				"3": {
-					"presence": 0,
-					"cool": 2,
-					"smarts": 1,
-					"bones": 0
+				{
+					"name":"p1c0s2b0",
+					"presence":1,
+					"cool":0,
+					"smarts":2,
+					"bones":0
 				},
-				"4": {
-					"presence": 1,
-					"cool": 2,
-					"smarts": 1,
-					"bones": -1
+				{
+					"name":"p1c1s2b-1",
+					"presence":1,
+					"cool":1,
+					"smarts":2,
+					"bones":-1
 				}
-			}
+			]
 		},
 		"pilot": {
 			"gear":[],
 			"links":[],
 			"moves":[],
 			"specialties":[],
-			"stats": {
-				"1": {
-					"presence": -1,
-					"cool": 2,
-					"smarts": 1,
-					"bones": 1
+			"stats": [
+				{
+					"name":"p1c2s0b-2",
+					"presence":1,
+					"cool":2,
+					"smarts":0,
+					"bones":-2
 				},
-				"2": {
-					"presence": -1,
-					"cool": 2,
-					"smarts": 2,
-					"bones": -1
+				{
+					"name":"p1c2s-1b-1",
+					"presence":1,
+					"cool":2,
+					"smarts":-1,
+					"bones":-1
 				},
-				"3": {
-					"presence": 0,
-					"cool": 2,
-					"smarts": 1,
-					"bones": 0
+				{
+					"name":"p1c2s-2b0",
+					"presence":1,
+					"cool":2,
+					"smarts":-2,
+					"bones":0
 				},
-				"4": {
-					"presence": 1,
-					"cool": 2,
-					"smarts": 1,
-					"bones": -1
+				{
+					"name":"p0c2s0b1",
+					"presence":0,
+					"cool":2,
+					"smarts":0,
+					"bones":1
 				}
-			}
+			]
 		},
 		"politician": {
 			"gear":[],
 			"links":[],
 			"moves":[],
 			"specialties":[],
-			"stats": {
-				"1": {
-					"presence": -1,
-					"cool": 2,
-					"smarts": 1,
-					"bones": 1
+			"stats": [
+				{
+					"name":"p2c-1s1b1",
+					"presence":2,
+					"cool":-1,
+					"smarts":1,
+					"bones":1
 				},
-				"2": {
-					"presence": -1,
-					"cool": 2,
-					"smarts": 2,
-					"bones": -1
+				{
+					"name":"p2c-1s2b-1",
+					"presence":2,
+					"cool":-1,
+					"smarts":2,
+					"bones":-1
 				},
-				"3": {
-					"presence": 0,
-					"cool": 2,
-					"smarts": 1,
-					"bones": 0
+				{
+					"name":"p2c0s1b0",
+					"presence":2,
+					"cool":0,
+					"smarts":1,
+					"bones":0
 				},
-				"4": {
-					"presence": 1,
-					"cool": 2,
-					"smarts": 1,
-					"bones": -1
+				{
+					"name":"p2c1s1b-1",
+					"presence":2,
+					"cool":1,
+					"smarts":1,
+					"bones":-1
 				}
-			}
+			
+			]
 		},
 		"rocker": {
 			"gear":[],
 			"links":[],
 			"moves":[],
 			"specialties":[],
-			"stats": {
-				"1": {
-					"presence": -1,
-					"cool": 2,
-					"smarts": 1,
-					"bones": 1
+			"stats": [
+				{
+					"name":"p2c-1s1b1",
+					"presence":2,
+					"cool":-1,
+					"smarts":1,
+					"bones":1
 				},
-				"2": {
-					"presence": -1,
-					"cool": 2,
-					"smarts": 2,
-					"bones": -1
+				{
+					"name":"p2c-1s-1b2",
+					"presence":2,
+					"cool":-1,
+					"smarts":-1,
+					"bones":2
 				},
-				"3": {
-					"presence": 0,
-					"cool": 2,
-					"smarts": 1,
-					"bones": 0
+				{
+					"name":"p2c0s0b1",
+					"presence":2,
+					"cool":0,
+					"smarts":0,
+					"bones":1
 				},
-				"4": {
-					"presence": 1,
-					"cool": 2,
-					"smarts": 1,
-					"bones": -1
+				{
+					"name":"p2c1s-1b1",
+					"presence":2,
+					"cool":1,
+					"smarts":-1,
+					"bones":1
 				}
-			}
+			]
 		},
 		"techie": {
 			"gear":[],
 			"links":[],
 			"moves":[],
 			"specialties":[],
-			"stats": {
-				"1": {
-					"presence": -1,
-					"cool": 2,
-					"smarts": 1,
-					"bones": 1
+			"stats": [
+				{
+					"name":"p-1c1s2b1",
+					"presence":-1,
+					"cool":1,
+					"smarts":2,
+					"bones":1
 				},
-				"2": {
-					"presence": -1,
-					"cool": 2,
-					"smarts": 2,
-					"bones": -1
+				{
+					"name":"p-1c-1s2b2",
+					"presence":-1,
+					"cool":-1,
+					"smarts":2,
+					"bones":2
 				},
-				"3": {
-					"presence": 0,
-					"cool": 2,
-					"smarts": 1,
-					"bones": 0
+				{
+					"name":"p0c0s2b1",
+					"presence":0,
+					"cool":0,
+					"smarts":2,
+					"bones":1
 				},
-				"4": {
-					"presence": 1,
-					"cool": 2,
-					"smarts": 1,
-					"bones": -1
+				{
+					"name":"p1c-1s2b1",
+					"presence":1,
+					"cool":-1,
+					"smarts":2,
+					"bones":1
 				}
-			}
+			]
 		},
 		"vendor": {
 			"gear":[],
 			"links":[],
 			"moves":[],
 			"specialties":[],
-			"stats": {
-				"1": {
-					"presence": -1,
-					"cool": 2,
-					"smarts": 1,
-					"bones": 1
+			"stats": [
+				{
+					"name":"p1c2s1b-1",
+					"presence":1,
+					"cool":2,
+					"smarts":1,
+					"bones":-1
 				},
-				"2": {
-					"presence": -1,
-					"cool": 2,
-					"smarts": 2,
-					"bones": -1
+				{
+					"name":"p2c2s-1b-1",
+					"presence":2,
+					"cool":2,
+					"smarts":-1,
+					"bones":-1
 				},
-				"3": {
-					"presence": 0,
-					"cool": 2,
-					"smarts": 1,
-					"bones": 0
+				{
+					"name":"p1c2s0b0",
+					"presence":1,
+					"cool":2,
+					"smarts":0,
+					"bones":0
 				},
-				"4": {
-					"presence": 1,
-					"cool": 2,
-					"smarts": 1,
-					"bones": -1
+				{
+					"name":"p1c2s-1b1",
+					"presence":1,
+					"cool":2,
+					"smarts":-1,
+					"bones":1
 				}
-			}
+			]
 		}
 	}
 };
@@ -468,6 +588,10 @@ Object.keys(data.playbooks).forEach(playbook =>{
 	//translate specialties
 	data.playbooks[playbook].specialties.forEach(item => {
 		item.description = getTranslation(item.name+'_description');
+		item.name = getTranslation(item.name);
+	});
+	//translate stattext
+	data.playbooks[playbook].stats.forEach(item => {
 		item.name = getTranslation(item.name);
 	});
 });

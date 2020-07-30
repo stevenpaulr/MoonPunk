@@ -1,0 +1,34 @@
+.sheet-rolltemplate-mp {
+	table {
+		border: 1px solid black;
+		width: 100%
+	}
+	th {
+		padding:5px;
+		color: white;
+		background-color: black;
+		font-family: "Courier Prime";
+		text-align: center;
+		font-size: 18px;
+
+	}
+
+	td{
+		padding:5px;
+		background-color: white;
+		font-family: "Courier Prime";
+	}
+
+	.inlinerollresult {
+		background-color: black;
+		border: 1px solid black !important;
+		color: white;
+		font-size: 20px;
+		.fullfail, .fullcrit{
+			border: 1px solid black;
+		}
+	}
+	.sheet-result{
+		text-align: right;
+	}
+}

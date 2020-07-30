@@ -196,7 +196,10 @@
   width: 100%;
   text-align: center;
   margin: 0;
-  font-size: 12px;
+  font-size: 12px !important;
+  border: 0;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
 }
 .sheet-stats input::-webkit-outer-spin-button,
 .sheet-stats input::-webkit-inner-spin-button {
@@ -225,7 +228,7 @@
   position: absolute;
   border: 0;
   height: 70px;
-  font-size: 18px;
+  font-size: 16px;
   z-index: -1;
   top: 10px;
   left: 2px;
@@ -578,4 +581,33 @@ textarea.sheet-smallcaps {
 }
 .sheet-linksection textarea {
   height: 40px;
+}
+.sheet-rolltemplate-mp table {
+  border: 1px solid black;
+  width: 100%;
+}
+.sheet-rolltemplate-mp th {
+  padding: 5px;
+  color: white;
+  background-color: black;
+  font-family: "Courier Prime";
+  text-align: center;
+  font-size: 18px;
+}
+.sheet-rolltemplate-mp td {
+  padding: 5px;
+  background-color: white;
+  font-family: "Courier Prime";
+}
+.sheet-rolltemplate-mp .inlinerollresult {
+  background-color: black;
+  border: 1px solid black !important;
+  color: white;
+  font-size: 20px;
+}
+.sheet-rolltemplate-mp .inlinerollresult .fullfail, .sheet-rolltemplate-mp .inlinerollresult .fullcrit {
+  border: 1px solid black;
+}
+.sheet-rolltemplate-mp .sheet-result {
+  text-align: right;
 }

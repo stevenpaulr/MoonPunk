@@ -1,0 +1,27 @@
+
+//Mail Roll Template
+//roll_name is the name of the thing being roll
+//name is the name of the character doing the rolling
+//stat_name is the name of the stat added to the roll
+//result is the die roll
+
+rolltemplate.sheet-rolltemplate-mp
+	table
+		tr
+			th(colspan=2) {{roll_name}}
+		tr  
+			td(colspan=2) {{name}} rolled {{#stat_name}} {{stat_name}}{{/stat_name}}{{#roll_mod}}({{roll_mod}}){{/roll_mod}}
+		tr
+			| {{#rollGreater() result 9}}
+			td.result.success {{result}}
+			td Success!
+			| {{/rollGreater() result 9}}
+			| {{#rollBetween() result 7 9}}
+			td.result {{result}}
+			td Partial Success
+			| {{/rollBetween() result 7 9}}
+			| {{#rollLess() result 7}}
+			td.result.failure {{result}}
+			td Miss
+			| {{/rollLess() result 7}}
+	

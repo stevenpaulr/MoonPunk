@@ -19,29 +19,29 @@
                 label.col100.stats
                     +number-input('presence')
                     +roll('presence','presence')(data-i18n='presence').statbutton
-                    .moves(data-i18n='tanstaafl')
-                    .moves(data-i18n='influencesomeone')
+                    +roll('tanstaafl','presence')(data-i18n='tanstaafl').moves
+                    +roll('influencesomeone','presence')(data-i18n='influencesomeone').moves
                 label.col100.stats
                     +number-input('cool')
                     +roll('cool','cool')(data-i18n='cool').statbutton
-                    .moves(data-i18n='thinkfast')
-                    .moves(data-i18n='actcasual')
+                    +roll('thinkfast','cool').moves(data-i18n='thinkfast')
+                    +roll('actcasual','cool').moves(data-i18n='actcasual')
                 label.col100.stats
                     +number-input('smarts')
                     +roll('smarts','smarts')(data-i18n='smarts').statbutton
-                    .moves(data-i18n='usetech')
-                    .moves(data-i18n='readroom')
+                    +roll('usetech','smarts').moves(data-i18n='usetech')
+                    +roll('readroom','smarts').moves(data-i18n='readroom')
                 label.col100.stats
                     +number-input('bones')
                     +roll('bones','bones')(data-i18n='bones').statbutton
-                    .moves(data-i18n='throwdown')
-                    .moves(data-i18n='protectsomeone')
+                    +roll('throwdown','bones').moves(data-i18n='throwdown')
+                    +roll('protectsomeone','bones').moves(data-i18n='protectsomeone')
 
                 label.col100.stats
                     button(
                         type="action",
                         name="act_resetstats"
-                    )(data-i18n='resetstats').statresetbutton
+                    ).statresetbutton(data-i18n='resetstats')
                     
             
             .stat-selector

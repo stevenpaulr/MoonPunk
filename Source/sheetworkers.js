@@ -35,6 +35,11 @@ Object.keys(data.playbooks).forEach(playbook =>{
 		item.name = getTranslation(item.name);
 	});
 
+	//translate stattext
+	data.playbooks[playbook].stats.forEach(item => {
+		item.name = getTranslation(item.name);
+	});
+
 });
 
 /* Utility functions - shouldn't need to touch most of these */

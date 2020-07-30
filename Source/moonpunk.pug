@@ -41,7 +41,7 @@ mixin roll(name, stat)
 	button(
 		type='roll',
 		name=`roll_${name}`,
-		value!=`&{template:default} {{name=${translation[name]}}} {{charname=@{character_name} rolled plus ${translation[stat]}}} {{Roll=[[2d6+@{${stat}}+?{+/- tag?|0}]]}}`
+		value!=`&{template:mp} {{name=@{character_name}}} {{roll_name=${translation[name]}}} {{stat_name=${translation[stat]}}} {{result=[[2d6+@{${stat}}+?{roll_mod|0}]]}}`
 	)&attributes(attributes)
 
 
