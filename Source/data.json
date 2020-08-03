@@ -385,10 +385,34 @@
 			]
 		},
 		"oldtimer": {
-			"gear":[],
-			"links":[],
-			"moves":[],
-			"specialties":[],
+			"gear":[
+				{"name":"sentimental_moon_item", "gearcheck":1}
+			],
+			"links":[
+				{"name":"link_oldtimer_1"},
+				{"name":"link_oldtimer_2"},
+				{"name":"link_oldtimer_3"},
+				{"name":"link_oldtimer_4"},
+				{"name":"link_oldtimer_5"},
+				{"name":"link_oldtimer_6"},
+				{"name":"link_oldtimer_7"},
+				{"name":"link_oldtimer_8"}
+			],
+			"moves":[
+				{"name":"experienced_loonie"},
+				{"name":"scarred"},
+				{"name":"spin_a_yarn"},
+				{"name":"ol_stomping_grounds"},
+				{"name":"you_know_i_used_to_know_someone"},
+				{"name":"social_call"},
+				{"name":"remember_the_fundamentals"}
+			],
+			"specialties":[
+				{"name":"ot_pioneer"},
+				{"name":"ot_migrant"},
+				{"name":"ot_political_dissenter"},
+				{"name":"ot_convict"}
+			],
 			"stats": [
 				{
 					"name":"p1c-1s2b1",
@@ -421,10 +445,33 @@
 			]
 		},
 		"pilot": {
-			"gear":[],
-			"links":[],
-			"moves":[],
-			"specialties":[],
+			"gear":[
+				{"name":"flight_jacket", "gearcheck":1}
+			],
+			"links":[
+				{"name":"link_pilot_1"},
+				{"name":"link_pilot_2"},
+				{"name":"link_pilot_3"},
+				{"name":"link_pilot_4"},
+				{"name":"link_pilot_5"},
+				{"name":"link_pilot_6"},
+				{"name":"link_pilot_7"},
+				{"name":"link_pilot_8"}
+			],
+			"moves":[
+				{"name":"heres_a_cool_trick"},
+				{"name":"never_tell_me_the_odds"},
+				{"name":"bang"},
+				{"name":"everythings_fine_here_how_are_you"},
+				{"name":"professional_smuggler"},
+				{"name":"the_need"},
+				{"name":"dont_get_cocky_kid"},
+				{"name":"i_got_your_six"}
+			],
+			"specialties":[
+				{"name":"callsign", "speccheck":1},
+				{"name":"ship", "speccheck":1}
+			],
 			"stats": [
 				{
 					"name":"p1c2s0b-2",
@@ -458,9 +505,31 @@
 		},
 		"politician": {
 			"gear":[],
-			"links":[],
-			"moves":[],
-			"specialties":[],
+			"links":[
+				{"name":"link_politician_1"},
+				{"name":"link_politician_2"},
+				{"name":"link_politician_3"},
+				{"name":"link_politician_4"},
+				{"name":"link_politician_5"},
+				{"name":"link_politician_6"},
+				{"name":"link_politician_7"},
+				{"name":"link_politician_8"}
+			],
+			"moves":[
+				{"name":"think_of_the_cause"},
+				{"name":"diplomatic_immunity"},
+				{"name":"rousing_speech"},
+				{"name":"mudslinging"},
+				{"name":"we_need_you"},
+				{"name":"silver_tongued_devil"},
+				{"name":"campaign_promise"}
+			],
+			"specialties":[
+				{"name":"oppo_expert"},
+				{"name":"incumbent"},
+				{"name":"volunteer_brigade"},
+				{"name":"pollster"}
+			],
 			"stats": [
 				{
 					"name":"p2c-1s1b1",
@@ -495,9 +564,28 @@
 		},
 		"rocker": {
 			"gear":[],
-			"links":[],
-			"moves":[],
-			"specialties":[],
+			"links":[
+				{"name":"link_rocker_1"},
+				{"name":"link_rocker_2"},
+				{"name":"link_rocker_3"},
+				{"name":"link_rocker_4"},
+				{"name":"link_rocker_5"},
+				{"name":"link_rocker_6"},
+				{"name":"link_rocker_7"}
+			],
+			"moves":[
+				{"name":"grab_the_mic"},
+				{"name":"the_rawk_show"},
+				{"name":"redeption_song"},
+				{"name":"strange_things_happen_every_day"},
+				{"name":"vibe_check"},
+				{"name":"stay_close_to_me"},
+				{"name":"doesnt_make_it_allright"}
+			],
+			"specialties":[
+				{"name":"whats_my_name","speccheck":1},
+				{"name":"the_underground","speccheck":1}
+			],
 			"stats": [
 				{
 					"name":"p2c-1s1b1",
@@ -530,10 +618,32 @@
 			]
 		},
 		"techie": {
-			"gear":[],
-			"links":[],
-			"moves":[],
-			"specialties":[],
+			"gear":[
+				{"name":"wrench","gearcheck":1}
+			],
+			"links":[
+				{"name":"link_techie_1"},
+				{"name":"link_techie_2"},
+				{"name":"link_techie_3"},
+				{"name":"link_techie_4"},
+				{"name":"link_techie_5"},
+				{"name":"link_techie_6"},
+				{"name":"link_techie_7"},
+				{"name":"link_techie_8"}
+			],
+			"moves":[
+				{"name":"mouse_trap"},
+				{"name":"macgyver"},
+				{"name":"instructions_not_included"},
+				{"name":"turn_it_up_to_11"},
+				{"name":"grease_monkey"},
+				{"name":"private_line"},
+				{"name":"transhumanist"}
+			],
+			"specialties":[
+				{"name":"magnum_opus", "speccheck":1},
+				{"name":"workshop", "speccheck":1}
+			],
 			"stats": [
 				{
 					"name":"p-1c1s2b1",
@@ -567,9 +677,30 @@
 		},
 		"vendor": {
 			"gear":[],
-			"links":[],
-			"moves":[],
-			"specialties":[],
+			"links":[
+				{"name":"link_vendor_1"},
+				{"name":"link_vendor_2"},
+				{"name":"link_vendor_3"},
+				{"name":"link_vendor_4"},
+				{"name":"link_vendor_5"},
+				{"name":"link_vendor_6"},
+				{"name":"link_vendor_7"},
+				{"name":"link_vendor_8"}
+			],
+			"moves":[
+				{"name":"i_got_just_the_thing"},
+				{"name":"high_pressure_sales_force"},
+				{"name":"reliable_front"},
+				{"name":"always_holding"},
+				{"name":"trade_secret"},
+				{"name":"case_the_joint"},
+				{"name":"size_em_up"},
+				{"name":"fake_smile"}
+			],
+			"specialties":[
+				{"name":"shop","speccheck":1},
+				{"name":"dirty_laundry", "speccheck":1}
+			],
 			"stats": [
 				{
 					"name":"p1c2s1b-1",
