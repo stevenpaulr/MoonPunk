@@ -9,6 +9,7 @@ const pug = require("pug"),
 
 const options = {
 	data: JSON.parse(data),
+	pretty: true,
 	translation: JSON.parse(fs.readFileSync("translation.json", "utf8")),
 	workers: "\n\"use strict\";\n" +
 		`const data = ${data.trim()};\n` +
