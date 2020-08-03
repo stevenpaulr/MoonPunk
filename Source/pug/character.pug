@@ -7,14 +7,20 @@
         label.col24b
             +text-input('pronouns')
             .label.text.title(data-i18n='pronouns')
-        +playbook-selector()
+        .playbook-selector
+            select(name='attr_playbook')
+                optgroup
+                    option() #{translation["selectplaybook"]}
+                    each playbook in playbooks
+                        option(value=playbook) #{translation[playbook]}
+
         label.col100
             +text-input('ethos')
             .label.text.title(data-i18n='ethos')
         
         //Left Column
         .col15
-            +hidden-input('chosestats').statcheck
+            +hidden-input('chosestats')(value=1).statcheck
             .stats
                 label.col100.stats
                     +number-input('presence')

@@ -215,6 +215,9 @@ $fontblack: #333;
 
 
 .sheet-playbook-selector {
+
+	width: 28.75%;
+
 	select {
 		border:0;
 		border-radius: 0;
@@ -226,7 +229,8 @@ $fontblack: #333;
 		font-weight: bold;
 		padding-top: 0;
 		height:19px;
-		width:240px;
+		width:100%;
+		margin-right: 10px;
 	
 	}
 	optgroup {
