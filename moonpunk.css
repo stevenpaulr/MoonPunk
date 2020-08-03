@@ -82,6 +82,32 @@
   transition: all 0.2s, opacity 0s;
   position: absolute;
 }
+.charsheet ::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: #c7c7c7;
+}
+.charsheet :-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #c7c7c7;
+  opacity: 1;
+}
+.charsheet ::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #c7c7c7;
+  opacity: 1;
+}
+.charsheet :-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #c7c7c7;
+}
+.charsheet ::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #c7c7c7;
+}
+.charsheet ::placeholder {
+  /* Most modern browsers support this now. */
+  color: #c7c7c7;
+}
 .charsheet ul {
   list-style: none;
   margin: 0;
