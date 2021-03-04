@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Character Sheet for Moonpunk",
   "dependencies": {
-    "pug": "^2.0.4",
+    "pug": "^3.0.1",
     "node-sass": "^4.11.0",
     "jstransformer": "^1.0.0"
   },
